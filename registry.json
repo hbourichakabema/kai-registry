@@ -693,8 +693,8 @@
           "lokal_update_requested_at": "2026-04-13T12:29:04",
           "lokal_update_done": false,
           "lokal_update_done_at": null,
-          "lokal_update_failed": true,
-          "lokal_update_failed_at": "2026-04-13T10:57:04",
+          "lokal_update_failed": false,
+          "lokal_update_failed_at": null,
           "lokal_result_mail_sent": false,
           "lokal_result_mail_sent_at": null,
           "lokal_report_path": "/project/update_tests/reports/local_update_report_20260413_105703.json",
@@ -709,7 +709,7 @@
           "kunden_update_failed_at": null,
           "closed": false,
           "closed_at": null,
-          "last_error": "Python updates failed",
+          "last_error": null,
           "customer_approvals": {
             "kai__MlVM-T9l2PuQGSdoXtsDA": {
               "email": "h.bouricha@kcart.de",
@@ -724,11 +724,6 @@
             }
           },
           "services": {
-            "postgres": {
-              "image": "postgres",
-              "current_tag": "16.13-alpine3.23",
-              "target_tag": "18.3-trixie"
-            },
             "open-webui": {
               "image": "ghcr.io/open-webui/open-webui",
               "current_tag": "v0.8.8",
@@ -772,13 +767,7 @@
           "closed_at": null,
           "last_error": null,
           "customer_approvals": {},
-          "services": {
-            "postgres": {
-              "image": "postgres",
-              "current_tag": "16.13-alpine3.23",
-              "target_tag": "18.3-trixie"
-            }
-          },
+          "services": {},
           "python_updates": {},
           "severity": "LOW",
           "security_count": 0,
@@ -810,13 +799,7 @@
           "closed_at": null,
           "last_error": null,
           "customer_approvals": {},
-          "services": {
-            "postgres": {
-              "image": "postgres",
-              "current_tag": "16.13-alpine3.23",
-              "target_tag": "18.3-trixie"
-            }
-          },
+          "services": {},
           "python_updates": {
             "pyjwt": {
               "current": "2.11.0",
@@ -951,20 +934,10 @@
               "current_tag": "v0.8.8",
               "target_tag": "v0.8.12"
             },
-            "postgres": {
-              "image": "postgres",
-              "current_tag": "16.13-alpine3.23",
-              "target_tag": "18.3-trixie"
-            },
             "curl": {
               "image": "curlimages/curl",
               "current_tag": "8.12.1",
               "target_tag": "8.19.0"
-            },
-            "docker": {
-              "image": "docker",
-              "current_tag": "27.5.1-cli",
-              "target_tag": "29.4.0-rc.1-windowsservercore-ltsc2025"
             }
           },
           "python_updates": {
