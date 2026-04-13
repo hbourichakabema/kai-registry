@@ -1,106 +1,65 @@
 {
   "batches": {
-    "2026-04-08": {
-      "scanned_at": "2026-04-08T15:55:23",
+    "2026-04-09T14-14-25": {
+      "scanned_at": "2026-04-09T14:14:25",
+      "batch_closed": false,
       "projects": {
-        "00_Vergleich_OCR_Pipelines": {
-          "services": {},
-          "python_updates": {
-            "pillow": {
-              "current": "12.1.0",
-              "target": "12.2.0",
-              "is_security": true
-            },
-            "pymupdf": {
-              "current": "1.27.1",
-              "target": "1.27.2.2",
-              "is_security": false
-            },
-            "python-multipart": {
-              "current": "0.0.22",
-              "target": "0.0.24",
-              "is_security": false
-            },
-            "torch": {
-              "current": "2.4.1",
-              "target": "2.11.0",
-              "is_security": true
-            }
-          },
-          "severity": "CRITICAL",
-          "security_count": 2,
-          "update_count": 4,
-          "lokal_update": false,
-          "kunden_update": false
-        },
-        "01_chatbot_rag_mvp": {
-          "services": {
-            "alpine": {
-              "image": "alpine",
-              "current_tag": "latest",
-              "target_tag": "?"
-            },
-            "qdrant": {
-              "image": "qdrant/qdrant",
-              "current_tag": "v1.16.3",
-              "target_tag": "v1.17.1"
-            },
-            "n8n": {
-              "image": "n8nio/n8n",
-              "current_tag": "2.11.4",
-              "target_tag": "2.15.0"
-            }
-          },
-          "python_updates": {
-            "python-dotenv": {
-              "current": "1.2.1",
-              "target": "1.2.2",
-              "is_security": false
-            }
-          },
-          "severity": "HIGH",
-          "security_count": 1,
-          "update_count": 4,
-          "lokal_update": false,
-          "kunden_update": false
-        },
         "02_chatbot_rag_multiusers": {
+          "update_available": true,
+          "agent_enabled": true,
+          "lokal_update_requested": false,
+          "lokal_update_requested_at": null,
+          "lokal_update_done": false,
+          "lokal_update_done_at": null,
+          "lokal_update_failed": false,
+          "lokal_update_failed_at": null,
+          "freigabe_mail_sent": false,
+          "freigabe_mail_last_sent_at": null,
+          "kunden_update_requested": false,
+          "kunden_update_requested_at": null,
+          "kunden_update_done": false,
+          "kunden_update_done_at": null,
+          "kunden_update_failed": false,
+          "kunden_update_failed_at": null,
+          "closed": false,
+          "last_error": null,
           "services": {},
           "python_updates": {
-            "psutil": {
-              "current": "7.2.1",
-              "target": "7.2.2",
-              "is_security": false
-            },
-            "pyjwt": {
-              "current": "2.10.1",
-              "target": "2.12.1",
-              "is_security": true
-            },
-            "pypdf": {
-              "current": "6.7.0",
-              "target": "6.9.2",
-              "is_security": true
-            },
-            "python-dotenv": {
-              "current": "1.2.1",
-              "target": "1.2.2",
-              "is_security": false
-            },
             "pyyaml": {
               "current": "6.0.2",
               "target": "6.0.3",
               "is_security": false
             }
           },
-          "severity": "HIGH",
-          "security_count": 2,
-          "update_count": 5,
-          "lokal_update": false,
-          "kunden_update": false
+          "severity": "LOW",
+          "security_count": 0,
+          "update_count": 1
         },
         "03_OpenWeb_UI_Chatbots": {
+          "update_available": true,
+          "agent_enabled": true,
+          "lokal_update_requested": false,
+          "lokal_update_requested_at": null,
+          "lokal_update_done": false,
+          "lokal_update_done_at": null,
+          "lokal_update_failed": false,
+          "lokal_update_failed_at": null,
+          "freigabe_mail_sent": false,
+          "freigabe_mail_last_sent_at": null,
+          "kunden_update_requested": false,
+          "kunden_update_requested_at": null,
+          "kunden_update_done": false,
+          "kunden_update_done_at": null,
+          "kunden_update_failed": false,
+          "kunden_update_failed_at": null,
+          "closed": false,
+          "last_error": null,
           "services": {
+            "postgres": {
+              "image": "postgres",
+              "current_tag": "16.13-alpine3.23",
+              "target_tag": "18.3-trixie"
+            },
             "open-webui": {
               "image": "ghcr.io/open-webui/open-webui",
               "current_tag": "v0.8.8",
@@ -116,47 +75,33 @@
           },
           "severity": "HIGH",
           "security_count": 1,
-          "update_count": 2,
-          "lokal_update": false,
-          "kunden_update": false
-        },
-        "04_Vertragsmanager": {
-          "services": {},
-          "python_updates": {
-            "langgraph": {
-              "current": "1.0.8",
-              "target": "1.1.6",
-              "is_security": true
-            },
-            "langsmith": {
-              "current": "0.7.1",
-              "target": "0.7.26",
-              "is_security": false
-            },
-            "python-dotenv": {
-              "current": "1.2.1",
-              "target": "1.2.2",
-              "is_security": false
-            },
-            "python-multipart": {
-              "current": "0.0.22",
-              "target": "0.0.24",
-              "is_security": false
-            },
-            "spacy": {
-              "current": "3.8.11",
-              "target": "3.8.14",
-              "is_security": false
-            }
-          },
-          "severity": "HIGH",
-          "security_count": 1,
-          "update_count": 5,
-          "lokal_update": false,
-          "kunden_update": false
+          "update_count": 3
         },
         "05_LinkedIn_Post_Automation": {
+          "update_available": true,
+          "agent_enabled": true,
+          "lokal_update_requested": false,
+          "lokal_update_requested_at": null,
+          "lokal_update_done": false,
+          "lokal_update_done_at": null,
+          "lokal_update_failed": false,
+          "lokal_update_failed_at": null,
+          "freigabe_mail_sent": false,
+          "freigabe_mail_last_sent_at": null,
+          "kunden_update_requested": false,
+          "kunden_update_requested_at": null,
+          "kunden_update_done": false,
+          "kunden_update_done_at": null,
+          "kunden_update_failed": false,
+          "kunden_update_failed_at": null,
+          "closed": false,
+          "last_error": null,
           "services": {
+            "postgres": {
+              "image": "postgres",
+              "current_tag": "16.13-alpine3.23",
+              "target_tag": "18.3-trixie"
+            },
             "n8n": {
               "image": "n8nio/n8n",
               "current_tag": "2.11.4",
@@ -166,21 +111,32 @@
           "python_updates": {},
           "severity": "LOW",
           "security_count": 0,
-          "update_count": 1,
-          "lokal_update": false,
-          "kunden_update": false
+          "update_count": 2
         },
         "06_RAG_Pipeline": {
+          "update_available": true,
+          "agent_enabled": true,
+          "lokal_update_requested": false,
+          "lokal_update_requested_at": null,
+          "lokal_update_done": false,
+          "lokal_update_done_at": null,
+          "lokal_update_failed": false,
+          "lokal_update_failed_at": null,
+          "freigabe_mail_sent": false,
+          "freigabe_mail_last_sent_at": null,
+          "kunden_update_requested": false,
+          "kunden_update_requested_at": null,
+          "kunden_update_done": false,
+          "kunden_update_done_at": null,
+          "kunden_update_failed": false,
+          "kunden_update_failed_at": null,
+          "closed": false,
+          "last_error": null,
           "services": {
-            "alpine": {
-              "image": "alpine",
-              "current_tag": "latest",
-              "target_tag": "?"
-            },
-            "curl": {
-              "image": "curlimages/curl",
-              "current_tag": "latest",
-              "target_tag": "?"
+            "postgres": {
+              "image": "postgres",
+              "current_tag": "16.13-alpine3.23",
+              "target_tag": "18.3-trixie"
             }
           },
           "python_updates": {
@@ -202,36 +158,360 @@
           },
           "severity": "HIGH",
           "security_count": 1,
-          "update_count": 5,
-          "lokal_update": false,
-          "kunden_update": false
+          "update_count": 4
         },
-        "07_Agentic_File_Analyse": {
+        "08_ChatGPT_Ersatz": {
+          "update_available": true,
+          "agent_enabled": true,
+          "lokal_update_requested": false,
+          "lokal_update_requested_at": null,
+          "lokal_update_done": false,
+          "lokal_update_done_at": null,
+          "lokal_update_failed": false,
+          "lokal_update_failed_at": null,
+          "freigabe_mail_sent": false,
+          "freigabe_mail_last_sent_at": null,
+          "kunden_update_requested": false,
+          "kunden_update_requested_at": null,
+          "kunden_update_done": false,
+          "kunden_update_done_at": null,
+          "kunden_update_failed": false,
+          "kunden_update_failed_at": null,
+          "closed": false,
+          "last_error": null,
+          "services": {
+            "open-webui": {
+              "image": "ghcr.io/open-webui/open-webui",
+              "current_tag": "v0.8.8",
+              "target_tag": "v0.8.12"
+            }
+          },
+          "python_updates": {},
+          "severity": "HIGH",
+          "security_count": 1,
+          "update_count": 1
+        },
+        "09_Newsletter_Agent": {
+          "update_available": true,
+          "agent_enabled": true,
+          "lokal_update_requested": false,
+          "lokal_update_requested_at": null,
+          "lokal_update_done": false,
+          "lokal_update_done_at": null,
+          "lokal_update_failed": false,
+          "lokal_update_failed_at": null,
+          "freigabe_mail_sent": false,
+          "freigabe_mail_last_sent_at": null,
+          "kunden_update_requested": false,
+          "kunden_update_requested_at": null,
+          "kunden_update_done": false,
+          "kunden_update_done_at": null,
+          "kunden_update_failed": false,
+          "kunden_update_failed_at": null,
+          "closed": false,
+          "last_error": null,
           "services": {},
+          "python_updates": {
+            "tzdata": {
+              "current": "2025.3",
+              "target": "2026.1",
+              "is_security": false
+            }
+          },
+          "severity": "LOW",
+          "security_count": 0,
+          "update_count": 1
+        },
+        "11_RAG_Mit_OpenWebUI": {
+          "update_available": true,
+          "agent_enabled": true,
+          "lokal_update_requested": false,
+          "lokal_update_requested_at": null,
+          "lokal_update_done": false,
+          "lokal_update_done_at": null,
+          "lokal_update_failed": false,
+          "lokal_update_failed_at": null,
+          "freigabe_mail_sent": false,
+          "freigabe_mail_last_sent_at": null,
+          "kunden_update_requested": false,
+          "kunden_update_requested_at": null,
+          "kunden_update_done": false,
+          "kunden_update_done_at": null,
+          "kunden_update_failed": false,
+          "kunden_update_failed_at": null,
+          "closed": false,
+          "last_error": null,
+          "services": {
+            "open-webui": {
+              "image": "ghcr.io/open-webui/open-webui",
+              "current_tag": "v0.8.8",
+              "target_tag": "v0.8.12"
+            },
+            "postgres": {
+              "image": "postgres",
+              "current_tag": "16.13-alpine3.23",
+              "target_tag": "18.3-trixie"
+            },
+            "curl": {
+              "image": "curlimages/curl",
+              "current_tag": "8.12.1",
+              "target_tag": "8.19.0"
+            },
+            "docker": {
+              "image": "docker",
+              "current_tag": "27.5.1-cli",
+              "target_tag": "29.4.0-windowsservercore-ltsc2025"
+            }
+          },
           "python_updates": {
             "python-dotenv": {
               "current": "1.2.1",
               "target": "1.2.2",
               "is_security": false
             },
-            "reportlab": {
-              "current": "4.4.7",
-              "target": "4.4.10",
+            "pyyaml": {
+              "current": "6.0.2",
+              "target": "6.0.3",
               "is_security": false
             },
-            "websockets": {
-              "current": "15.0.1",
-              "target": "16.0",
+            "pyjwt": {
+              "current": "2.11.0",
+              "target": "2.12.1",
+              "is_security": true
+            }
+          },
+          "severity": "HIGH",
+          "security_count": 2,
+          "update_count": 7
+        }
+      }
+    },
+    "2026-04-13T12-01-22": {
+      "scanned_at": "2026-04-13T12:01:22",
+      "batch_closed": false,
+      "projects": {
+        "02_chatbot_rag_multiusers": {
+          "update_available": true,
+          "agent_enabled": true,
+          "runtime_location": "local",
+          "lokal_update_requested": false,
+          "lokal_update_requested_at": null,
+          "lokal_update_done": false,
+          "lokal_update_done_at": null,
+          "lokal_update_failed": false,
+          "lokal_update_failed_at": null,
+          "lokal_result_mail_sent": false,
+          "lokal_result_mail_sent_at": null,
+          "lokal_report_path": null,
+          "lokal_report_status": null,
+          "freigabe_mail_sent": false,
+          "freigabe_mail_last_sent_at": null,
+          "kunden_update_requested": false,
+          "kunden_update_requested_at": null,
+          "kunden_update_done": false,
+          "kunden_update_done_at": null,
+          "kunden_update_failed": false,
+          "kunden_update_failed_at": null,
+          "closed": false,
+          "closed_at": null,
+          "last_error": null,
+          "customer_approvals": {},
+          "services": {},
+          "python_updates": {
+            "pypdf": {
+              "current": "6.9.2",
+              "target": "6.10.0",
+              "is_security": true
+            },
+            "pyyaml": {
+              "current": "6.0.2",
+              "target": "6.0.3",
               "is_security": false
             }
           },
+          "severity": "HIGH",
+          "security_count": 1,
+          "update_count": 2
+        },
+        "03_OpenWeb_UI_Chatbots": {
+          "update_available": true,
+          "agent_enabled": true,
+          "runtime_location": "local",
+          "lokal_update_requested": false,
+          "lokal_update_requested_at": null,
+          "lokal_update_done": false,
+          "lokal_update_done_at": null,
+          "lokal_update_failed": false,
+          "lokal_update_failed_at": null,
+          "lokal_result_mail_sent": false,
+          "lokal_result_mail_sent_at": null,
+          "lokal_report_path": null,
+          "lokal_report_status": null,
+          "freigabe_mail_sent": false,
+          "freigabe_mail_last_sent_at": null,
+          "kunden_update_requested": false,
+          "kunden_update_requested_at": null,
+          "kunden_update_done": false,
+          "kunden_update_done_at": null,
+          "kunden_update_failed": false,
+          "kunden_update_failed_at": null,
+          "closed": false,
+          "closed_at": null,
+          "last_error": null,
+          "customer_approvals": {
+            "kai__MlVM-T9l2PuQGSdoXtsDA": {
+              "email": "h.bouricha@kcart.de",
+              "email_sent": false,
+              "email_sent_at": null,
+              "approved": false,
+              "approved_at": null,
+              "update_done": false,
+              "update_done_at": null,
+              "update_failed": false,
+              "update_failed_at": null
+            }
+          },
+          "services": {
+            "postgres": {
+              "image": "postgres",
+              "current_tag": "16.13-alpine3.23",
+              "target_tag": "18.3-trixie"
+            },
+            "open-webui": {
+              "image": "ghcr.io/open-webui/open-webui",
+              "current_tag": "v0.8.8",
+              "target_tag": "v0.8.12"
+            }
+          },
+          "python_updates": {
+            "python-dotenv": {
+              "current": "1.2.1",
+              "target": "1.2.2",
+              "is_security": false
+            }
+          },
+          "severity": "HIGH",
+          "security_count": 1,
+          "update_count": 3
+        },
+        "05_LinkedIn_Post_Automation": {
+          "update_available": true,
+          "agent_enabled": true,
+          "runtime_location": "local",
+          "lokal_update_requested": false,
+          "lokal_update_requested_at": null,
+          "lokal_update_done": false,
+          "lokal_update_done_at": null,
+          "lokal_update_failed": false,
+          "lokal_update_failed_at": null,
+          "lokal_result_mail_sent": false,
+          "lokal_result_mail_sent_at": null,
+          "lokal_report_path": null,
+          "lokal_report_status": null,
+          "freigabe_mail_sent": false,
+          "freigabe_mail_last_sent_at": null,
+          "kunden_update_requested": false,
+          "kunden_update_requested_at": null,
+          "kunden_update_done": false,
+          "kunden_update_done_at": null,
+          "kunden_update_failed": false,
+          "kunden_update_failed_at": null,
+          "closed": false,
+          "closed_at": null,
+          "last_error": null,
+          "customer_approvals": {},
+          "services": {
+            "postgres": {
+              "image": "postgres",
+              "current_tag": "16.13-alpine3.23",
+              "target_tag": "18.3-trixie"
+            }
+          },
+          "python_updates": {},
           "severity": "LOW",
           "security_count": 0,
-          "update_count": 3,
-          "lokal_update": false,
-          "kunden_update": false
+          "update_count": 1
+        },
+        "06_RAG_Pipeline": {
+          "update_available": true,
+          "agent_enabled": true,
+          "runtime_location": "local",
+          "lokal_update_requested": false,
+          "lokal_update_requested_at": null,
+          "lokal_update_done": false,
+          "lokal_update_done_at": null,
+          "lokal_update_failed": false,
+          "lokal_update_failed_at": null,
+          "lokal_result_mail_sent": false,
+          "lokal_result_mail_sent_at": null,
+          "lokal_report_path": null,
+          "lokal_report_status": null,
+          "freigabe_mail_sent": false,
+          "freigabe_mail_last_sent_at": null,
+          "kunden_update_requested": false,
+          "kunden_update_requested_at": null,
+          "kunden_update_done": false,
+          "kunden_update_done_at": null,
+          "kunden_update_failed": false,
+          "kunden_update_failed_at": null,
+          "closed": false,
+          "closed_at": null,
+          "last_error": null,
+          "customer_approvals": {},
+          "services": {
+            "postgres": {
+              "image": "postgres",
+              "current_tag": "16.13-alpine3.23",
+              "target_tag": "18.3-trixie"
+            }
+          },
+          "python_updates": {
+            "pyjwt": {
+              "current": "2.11.0",
+              "target": "2.12.1",
+              "is_security": true
+            },
+            "python-dotenv": {
+              "current": "1.2.1",
+              "target": "1.2.2",
+              "is_security": false
+            },
+            "pyyaml": {
+              "current": "6.0.2",
+              "target": "6.0.3",
+              "is_security": false
+            }
+          },
+          "severity": "HIGH",
+          "security_count": 1,
+          "update_count": 4
         },
         "08_ChatGPT_Ersatz": {
+          "update_available": true,
+          "agent_enabled": true,
+          "runtime_location": "local",
+          "lokal_update_requested": false,
+          "lokal_update_requested_at": null,
+          "lokal_update_done": false,
+          "lokal_update_done_at": null,
+          "lokal_update_failed": false,
+          "lokal_update_failed_at": null,
+          "lokal_result_mail_sent": false,
+          "lokal_result_mail_sent_at": null,
+          "lokal_report_path": null,
+          "lokal_report_status": null,
+          "freigabe_mail_sent": false,
+          "freigabe_mail_last_sent_at": null,
+          "kunden_update_requested": false,
+          "kunden_update_requested_at": null,
+          "kunden_update_done": false,
+          "kunden_update_done_at": null,
+          "kunden_update_failed": false,
+          "kunden_update_failed_at": null,
+          "closed": false,
+          "closed_at": null,
+          "last_error": null,
+          "customer_approvals": {},
           "services": {
             "open-webui": {
               "image": "ghcr.io/open-webui/open-webui",
@@ -240,18 +520,41 @@
             },
             "searxng": {
               "image": "searxng/searxng",
-              "current_tag": "latest",
-              "target_tag": "?"
+              "current_tag": "2026.4.7-08ef7a63d",
+              "target_tag": "2026.4.13-ee66b070a"
             }
           },
           "python_updates": {},
           "severity": "HIGH",
           "security_count": 1,
-          "update_count": 2,
-          "lokal_update": false,
-          "kunden_update": false
+          "update_count": 2
         },
         "09_Newsletter_Agent": {
+          "update_available": true,
+          "agent_enabled": true,
+          "runtime_location": "local",
+          "lokal_update_requested": false,
+          "lokal_update_requested_at": null,
+          "lokal_update_done": false,
+          "lokal_update_done_at": null,
+          "lokal_update_failed": false,
+          "lokal_update_failed_at": null,
+          "lokal_result_mail_sent": false,
+          "lokal_result_mail_sent_at": null,
+          "lokal_report_path": null,
+          "lokal_report_status": null,
+          "freigabe_mail_sent": false,
+          "freigabe_mail_last_sent_at": null,
+          "kunden_update_requested": false,
+          "kunden_update_requested_at": null,
+          "kunden_update_done": false,
+          "kunden_update_done_at": null,
+          "kunden_update_failed": false,
+          "kunden_update_failed_at": null,
+          "closed": false,
+          "closed_at": null,
+          "last_error": null,
+          "customer_approvals": {},
           "services": {},
           "python_updates": {
             "tzdata": {
@@ -262,16 +565,44 @@
           },
           "severity": "LOW",
           "security_count": 0,
-          "update_count": 1,
-          "lokal_update": false,
-          "kunden_update": false
+          "update_count": 1
         },
         "11_RAG_Mit_OpenWebUI": {
+          "update_available": true,
+          "agent_enabled": true,
+          "runtime_location": "local",
+          "lokal_update_requested": false,
+          "lokal_update_requested_at": null,
+          "lokal_update_done": false,
+          "lokal_update_done_at": null,
+          "lokal_update_failed": false,
+          "lokal_update_failed_at": null,
+          "lokal_result_mail_sent": false,
+          "lokal_result_mail_sent_at": null,
+          "lokal_report_path": null,
+          "lokal_report_status": null,
+          "freigabe_mail_sent": false,
+          "freigabe_mail_last_sent_at": null,
+          "kunden_update_requested": false,
+          "kunden_update_requested_at": null,
+          "kunden_update_done": false,
+          "kunden_update_done_at": null,
+          "kunden_update_failed": false,
+          "kunden_update_failed_at": null,
+          "closed": false,
+          "closed_at": null,
+          "last_error": null,
+          "customer_approvals": {},
           "services": {
             "open-webui": {
               "image": "ghcr.io/open-webui/open-webui",
               "current_tag": "v0.8.8",
               "target_tag": "v0.8.12"
+            },
+            "postgres": {
+              "image": "postgres",
+              "current_tag": "16.13-alpine3.23",
+              "target_tag": "18.3-trixie"
             },
             "curl": {
               "image": "curlimages/curl",
@@ -281,7 +612,7 @@
             "docker": {
               "image": "docker",
               "current_tag": "27.5.1-cli",
-              "target_tag": "29.4.0-windowsservercore-ltsc2025"
+              "target_tag": "29.4.0-rc.1-windowsservercore-ltsc2025"
             }
           },
           "python_updates": {
@@ -303,102 +634,46 @@
           },
           "severity": "HIGH",
           "security_count": 2,
-          "update_count": 6,
-          "lokal_update": false,
-          "kunden_update": false
+          "update_count": 7
         }
       }
     },
-    "2026-04-08T16-22-58": {
-      "scanned_at": "2026-04-08T16:22:58",
+    "2026-04-13T12-22-15": {
+      "scanned_at": "2026-04-13T12:22:15",
+      "batch_closed": false,
       "projects": {
-        "00_Vergleich_OCR_Pipelines": {
-          "services": {},
-          "python_updates": {
-            "pillow": {
-              "current": "12.1.0",
-              "target": "12.2.0",
-              "is_security": true
-            },
-            "pymupdf": {
-              "current": "1.27.1",
-              "target": "1.27.2.2",
-              "is_security": false
-            },
-            "python-multipart": {
-              "current": "0.0.22",
-              "target": "0.0.24",
-              "is_security": false
-            },
-            "torch": {
-              "current": "2.4.1",
-              "target": "2.11.0",
-              "is_security": true
-            }
-          },
-          "severity": "CRITICAL",
-          "security_count": 2,
-          "update_count": 4,
-          "lokal_update": false,
-          "lokal_update_requested_at": null,
-          "kunden_update": false,
-          "kunden_update_requested_at": null
-        },
-        "01_chatbot_rag_mvp": {
-          "services": {
-            "alpine": {
-              "image": "alpine",
-              "current_tag": "latest",
-              "target_tag": "?"
-            },
-            "qdrant": {
-              "image": "qdrant/qdrant",
-              "current_tag": "v1.16.3",
-              "target_tag": "v1.17.1"
-            },
-            "n8n": {
-              "image": "n8nio/n8n",
-              "current_tag": "2.11.4",
-              "target_tag": "2.15.0"
-            }
-          },
-          "python_updates": {
-            "python-dotenv": {
-              "current": "1.2.1",
-              "target": "1.2.2",
-              "is_security": false
-            }
-          },
-          "severity": "HIGH",
-          "security_count": 1,
-          "update_count": 4,
-          "lokal_update": false,
-          "lokal_update_requested_at": null,
-          "kunden_update": false,
-          "kunden_update_requested_at": null
-        },
         "02_chatbot_rag_multiusers": {
+          "update_available": true,
+          "agent_enabled": true,
+          "runtime_location": "local",
+          "lokal_update_requested": true,
+          "lokal_update_requested_at": "2026-04-13T12:29:04",
+          "lokal_update_done": false,
+          "lokal_update_done_at": null,
+          "lokal_update_failed": false,
+          "lokal_update_failed_at": null,
+          "lokal_result_mail_sent": false,
+          "lokal_result_mail_sent_at": null,
+          "lokal_report_path": null,
+          "lokal_report_status": null,
+          "freigabe_mail_sent": false,
+          "freigabe_mail_last_sent_at": null,
+          "kunden_update_requested": false,
+          "kunden_update_requested_at": null,
+          "kunden_update_done": false,
+          "kunden_update_done_at": null,
+          "kunden_update_failed": false,
+          "kunden_update_failed_at": null,
+          "closed": false,
+          "closed_at": null,
+          "last_error": null,
+          "customer_approvals": {},
           "services": {},
           "python_updates": {
-            "psutil": {
-              "current": "7.2.1",
-              "target": "7.2.2",
-              "is_security": false
-            },
-            "pyjwt": {
-              "current": "2.10.1",
-              "target": "2.12.1",
-              "is_security": true
-            },
             "pypdf": {
-              "current": "6.7.0",
-              "target": "6.9.2",
+              "current": "6.9.2",
+              "target": "6.10.0",
               "is_security": true
-            },
-            "python-dotenv": {
-              "current": "1.2.1",
-              "target": "1.2.2",
-              "is_security": false
             },
             "pyyaml": {
               "current": "6.0.2",
@@ -407,15 +682,53 @@
             }
           },
           "severity": "HIGH",
-          "security_count": 2,
-          "update_count": 5,
-          "lokal_update": false,
-          "lokal_update_requested_at": null,
-          "kunden_update": false,
-          "kunden_update_requested_at": null
+          "security_count": 1,
+          "update_count": 2
         },
         "03_OpenWeb_UI_Chatbots": {
+          "update_available": true,
+          "agent_enabled": true,
+          "runtime_location": "local",
+          "lokal_update_requested": true,
+          "lokal_update_requested_at": "2026-04-13T12:29:04",
+          "lokal_update_done": false,
+          "lokal_update_done_at": null,
+          "lokal_update_failed": false,
+          "lokal_update_failed_at": null,
+          "lokal_result_mail_sent": false,
+          "lokal_result_mail_sent_at": null,
+          "lokal_report_path": null,
+          "lokal_report_status": null,
+          "freigabe_mail_sent": false,
+          "freigabe_mail_last_sent_at": null,
+          "kunden_update_requested": false,
+          "kunden_update_requested_at": null,
+          "kunden_update_done": false,
+          "kunden_update_done_at": null,
+          "kunden_update_failed": false,
+          "kunden_update_failed_at": null,
+          "closed": false,
+          "closed_at": null,
+          "last_error": null,
+          "customer_approvals": {
+            "kai__MlVM-T9l2PuQGSdoXtsDA": {
+              "email": "h.bouricha@kcart.de",
+              "email_sent": false,
+              "email_sent_at": null,
+              "approved": false,
+              "approved_at": null,
+              "update_done": false,
+              "update_done_at": null,
+              "update_failed": false,
+              "update_failed_at": null
+            }
+          },
           "services": {
+            "postgres": {
+              "image": "postgres",
+              "current_tag": "16.13-alpine3.23",
+              "target_tag": "18.3-trixie"
+            },
             "open-webui": {
               "image": "ghcr.io/open-webui/open-webui",
               "current_tag": "v0.8.8",
@@ -431,77 +744,77 @@
           },
           "severity": "HIGH",
           "security_count": 1,
-          "update_count": 2,
-          "lokal_update": false,
-          "lokal_update_requested_at": null,
-          "kunden_update": false,
-          "kunden_update_requested_at": null
-        },
-        "04_Vertragsmanager": {
-          "services": {},
-          "python_updates": {
-            "langgraph": {
-              "current": "1.0.8",
-              "target": "1.1.6",
-              "is_security": true
-            },
-            "langsmith": {
-              "current": "0.7.1",
-              "target": "0.7.26",
-              "is_security": false
-            },
-            "python-dotenv": {
-              "current": "1.2.1",
-              "target": "1.2.2",
-              "is_security": false
-            },
-            "python-multipart": {
-              "current": "0.0.22",
-              "target": "0.0.24",
-              "is_security": false
-            },
-            "spacy": {
-              "current": "3.8.11",
-              "target": "3.8.14",
-              "is_security": false
-            }
-          },
-          "severity": "HIGH",
-          "security_count": 1,
-          "update_count": 5,
-          "lokal_update": false,
-          "lokal_update_requested_at": null,
-          "kunden_update": false,
-          "kunden_update_requested_at": null
+          "update_count": 3
         },
         "05_LinkedIn_Post_Automation": {
+          "update_available": true,
+          "agent_enabled": true,
+          "runtime_location": "local",
+          "lokal_update_requested": true,
+          "lokal_update_requested_at": "2026-04-13T12:29:04",
+          "lokal_update_done": false,
+          "lokal_update_done_at": null,
+          "lokal_update_failed": false,
+          "lokal_update_failed_at": null,
+          "lokal_result_mail_sent": false,
+          "lokal_result_mail_sent_at": null,
+          "lokal_report_path": null,
+          "lokal_report_status": null,
+          "freigabe_mail_sent": false,
+          "freigabe_mail_last_sent_at": null,
+          "kunden_update_requested": false,
+          "kunden_update_requested_at": null,
+          "kunden_update_done": false,
+          "kunden_update_done_at": null,
+          "kunden_update_failed": false,
+          "kunden_update_failed_at": null,
+          "closed": false,
+          "closed_at": null,
+          "last_error": null,
+          "customer_approvals": {},
           "services": {
-            "n8n": {
-              "image": "n8nio/n8n",
-              "current_tag": "2.11.4",
-              "target_tag": "2.15.0"
+            "postgres": {
+              "image": "postgres",
+              "current_tag": "16.13-alpine3.23",
+              "target_tag": "18.3-trixie"
             }
           },
           "python_updates": {},
           "severity": "LOW",
           "security_count": 0,
-          "update_count": 1,
-          "lokal_update": false,
-          "lokal_update_requested_at": null,
-          "kunden_update": false,
-          "kunden_update_requested_at": null
+          "update_count": 1
         },
         "06_RAG_Pipeline": {
+          "update_available": true,
+          "agent_enabled": true,
+          "runtime_location": "local",
+          "lokal_update_requested": true,
+          "lokal_update_requested_at": "2026-04-13T12:29:04",
+          "lokal_update_done": false,
+          "lokal_update_done_at": null,
+          "lokal_update_failed": false,
+          "lokal_update_failed_at": null,
+          "lokal_result_mail_sent": false,
+          "lokal_result_mail_sent_at": null,
+          "lokal_report_path": null,
+          "lokal_report_status": null,
+          "freigabe_mail_sent": false,
+          "freigabe_mail_last_sent_at": null,
+          "kunden_update_requested": false,
+          "kunden_update_requested_at": null,
+          "kunden_update_done": false,
+          "kunden_update_done_at": null,
+          "kunden_update_failed": false,
+          "kunden_update_failed_at": null,
+          "closed": false,
+          "closed_at": null,
+          "last_error": null,
+          "customer_approvals": {},
           "services": {
-            "alpine": {
-              "image": "alpine",
-              "current_tag": "latest",
-              "target_tag": "?"
-            },
-            "curl": {
-              "image": "curlimages/curl",
-              "current_tag": "latest",
-              "target_tag": "?"
+            "postgres": {
+              "image": "postgres",
+              "current_tag": "16.13-alpine3.23",
+              "target_tag": "18.3-trixie"
             }
           },
           "python_updates": {
@@ -523,40 +836,34 @@
           },
           "severity": "HIGH",
           "security_count": 1,
-          "update_count": 5,
-          "lokal_update": false,
-          "lokal_update_requested_at": null,
-          "kunden_update": false,
-          "kunden_update_requested_at": null
-        },
-        "07_Agentic_File_Analyse": {
-          "services": {},
-          "python_updates": {
-            "python-dotenv": {
-              "current": "1.2.1",
-              "target": "1.2.2",
-              "is_security": false
-            },
-            "reportlab": {
-              "current": "4.4.7",
-              "target": "4.4.10",
-              "is_security": false
-            },
-            "websockets": {
-              "current": "15.0.1",
-              "target": "16.0",
-              "is_security": false
-            }
-          },
-          "severity": "LOW",
-          "security_count": 0,
-          "update_count": 3,
-          "lokal_update": false,
-          "lokal_update_requested_at": null,
-          "kunden_update": false,
-          "kunden_update_requested_at": null
+          "update_count": 4
         },
         "08_ChatGPT_Ersatz": {
+          "update_available": true,
+          "agent_enabled": true,
+          "runtime_location": "local",
+          "lokal_update_requested": true,
+          "lokal_update_requested_at": "2026-04-13T12:29:04",
+          "lokal_update_done": false,
+          "lokal_update_done_at": null,
+          "lokal_update_failed": false,
+          "lokal_update_failed_at": null,
+          "lokal_result_mail_sent": false,
+          "lokal_result_mail_sent_at": null,
+          "lokal_report_path": null,
+          "lokal_report_status": null,
+          "freigabe_mail_sent": false,
+          "freigabe_mail_last_sent_at": null,
+          "kunden_update_requested": false,
+          "kunden_update_requested_at": null,
+          "kunden_update_done": false,
+          "kunden_update_done_at": null,
+          "kunden_update_failed": false,
+          "kunden_update_failed_at": null,
+          "closed": false,
+          "closed_at": null,
+          "last_error": null,
+          "customer_approvals": {},
           "services": {
             "open-webui": {
               "image": "ghcr.io/open-webui/open-webui",
@@ -565,20 +872,41 @@
             },
             "searxng": {
               "image": "searxng/searxng",
-              "current_tag": "latest",
-              "target_tag": "?"
+              "current_tag": "2026.4.7-08ef7a63d",
+              "target_tag": "2026.4.13-ee66b070a"
             }
           },
           "python_updates": {},
           "severity": "HIGH",
           "security_count": 1,
-          "update_count": 2,
-          "lokal_update": false,
-          "lokal_update_requested_at": null,
-          "kunden_update": false,
-          "kunden_update_requested_at": null
+          "update_count": 2
         },
         "09_Newsletter_Agent": {
+          "update_available": true,
+          "agent_enabled": true,
+          "runtime_location": "local",
+          "lokal_update_requested": true,
+          "lokal_update_requested_at": "2026-04-13T12:29:04",
+          "lokal_update_done": false,
+          "lokal_update_done_at": null,
+          "lokal_update_failed": false,
+          "lokal_update_failed_at": null,
+          "lokal_result_mail_sent": false,
+          "lokal_result_mail_sent_at": null,
+          "lokal_report_path": null,
+          "lokal_report_status": null,
+          "freigabe_mail_sent": false,
+          "freigabe_mail_last_sent_at": null,
+          "kunden_update_requested": false,
+          "kunden_update_requested_at": null,
+          "kunden_update_done": false,
+          "kunden_update_done_at": null,
+          "kunden_update_failed": false,
+          "kunden_update_failed_at": null,
+          "closed": false,
+          "closed_at": null,
+          "last_error": null,
+          "customer_approvals": {},
           "services": {},
           "python_updates": {
             "tzdata": {
@@ -589,695 +917,34 @@
           },
           "severity": "LOW",
           "security_count": 0,
-          "update_count": 1,
-          "lokal_update": false,
-          "lokal_update_requested_at": null,
-          "kunden_update": false,
-          "kunden_update_requested_at": null
+          "update_count": 1
         },
         "11_RAG_Mit_OpenWebUI": {
-          "services": {
-            "open-webui": {
-              "image": "ghcr.io/open-webui/open-webui",
-              "current_tag": "v0.8.8",
-              "target_tag": "v0.8.12"
-            },
-            "curl": {
-              "image": "curlimages/curl",
-              "current_tag": "8.12.1",
-              "target_tag": "8.19.0"
-            },
-            "docker": {
-              "image": "docker",
-              "current_tag": "27.5.1-cli",
-              "target_tag": "29.4.0-windowsservercore-ltsc2025"
-            }
-          },
-          "python_updates": {
-            "python-dotenv": {
-              "current": "1.2.1",
-              "target": "1.2.2",
-              "is_security": false
-            },
-            "pyyaml": {
-              "current": "6.0.2",
-              "target": "6.0.3",
-              "is_security": false
-            },
-            "pyjwt": {
-              "current": "2.11.0",
-              "target": "2.12.1",
-              "is_security": true
-            }
-          },
-          "severity": "HIGH",
-          "security_count": 2,
-          "update_count": 6,
-          "lokal_update": false,
-          "lokal_update_requested_at": null,
-          "kunden_update": false,
-          "kunden_update_requested_at": null
-        }
-      }
-    },
-    "2026-04-08T16-33-00": {
-      "scanned_at": "2026-04-08T16:33:00",
-      "projects": {
-        "00_Vergleich_OCR_Pipelines": {
-          "services": {},
-          "python_updates": {
-            "pillow": {
-              "current": "12.1.0",
-              "target": "12.2.0",
-              "is_security": true
-            },
-            "pymupdf": {
-              "current": "1.27.1",
-              "target": "1.27.2.2",
-              "is_security": false
-            },
-            "python-multipart": {
-              "current": "0.0.22",
-              "target": "0.0.24",
-              "is_security": false
-            },
-            "torch": {
-              "current": "2.4.1",
-              "target": "2.11.0",
-              "is_security": true
-            }
-          },
-          "severity": "CRITICAL",
-          "security_count": 2,
-          "update_count": 4,
-          "lokal_update": false,
-          "lokal_update_requested_at": null,
-          "kunden_update": false,
-          "kunden_update_requested_at": null
-        },
-        "01_chatbot_rag_mvp": {
-          "services": {
-            "alpine": {
-              "image": "alpine",
-              "current_tag": "latest",
-              "target_tag": "?"
-            },
-            "qdrant": {
-              "image": "qdrant/qdrant",
-              "current_tag": "v1.16.3",
-              "target_tag": "v1.17.1"
-            },
-            "n8n": {
-              "image": "n8nio/n8n",
-              "current_tag": "2.11.4",
-              "target_tag": "2.15.0"
-            }
-          },
-          "python_updates": {
-            "python-dotenv": {
-              "current": "1.2.1",
-              "target": "1.2.2",
-              "is_security": false
-            }
-          },
-          "severity": "HIGH",
-          "security_count": 1,
-          "update_count": 4,
-          "lokal_update": false,
-          "lokal_update_requested_at": null,
-          "kunden_update": false,
-          "kunden_update_requested_at": null
-        },
-        "02_chatbot_rag_multiusers": {
-          "services": {},
-          "python_updates": {
-            "psutil": {
-              "current": "7.2.1",
-              "target": "7.2.2",
-              "is_security": false
-            },
-            "pyjwt": {
-              "current": "2.10.1",
-              "target": "2.12.1",
-              "is_security": true
-            },
-            "pypdf": {
-              "current": "6.7.0",
-              "target": "6.9.2",
-              "is_security": true
-            },
-            "python-dotenv": {
-              "current": "1.2.1",
-              "target": "1.2.2",
-              "is_security": false
-            },
-            "pyyaml": {
-              "current": "6.0.2",
-              "target": "6.0.3",
-              "is_security": false
-            }
-          },
-          "severity": "HIGH",
-          "security_count": 2,
-          "update_count": 5,
-          "lokal_update": false,
-          "lokal_update_requested_at": null,
-          "kunden_update": false,
-          "kunden_update_requested_at": null
-        },
-        "03_OpenWeb_UI_Chatbots": {
-          "services": {
-            "open-webui": {
-              "image": "ghcr.io/open-webui/open-webui",
-              "current_tag": "v0.8.8",
-              "target_tag": "v0.8.12"
-            }
-          },
-          "python_updates": {
-            "python-dotenv": {
-              "current": "1.2.1",
-              "target": "1.2.2",
-              "is_security": false
-            }
-          },
-          "severity": "HIGH",
-          "security_count": 1,
-          "update_count": 2,
-          "lokal_update": false,
-          "lokal_update_requested_at": null,
-          "kunden_update": false,
-          "kunden_update_requested_at": null
-        },
-        "04_Vertragsmanager": {
-          "services": {},
-          "python_updates": {
-            "langgraph": {
-              "current": "1.0.8",
-              "target": "1.1.6",
-              "is_security": true
-            },
-            "langsmith": {
-              "current": "0.7.1",
-              "target": "0.7.26",
-              "is_security": false
-            },
-            "python-dotenv": {
-              "current": "1.2.1",
-              "target": "1.2.2",
-              "is_security": false
-            },
-            "python-multipart": {
-              "current": "0.0.22",
-              "target": "0.0.24",
-              "is_security": false
-            },
-            "spacy": {
-              "current": "3.8.11",
-              "target": "3.8.14",
-              "is_security": false
-            }
-          },
-          "severity": "HIGH",
-          "security_count": 1,
-          "update_count": 5,
-          "lokal_update": false,
-          "lokal_update_requested_at": null,
-          "kunden_update": false,
-          "kunden_update_requested_at": null
-        },
-        "05_LinkedIn_Post_Automation": {
-          "services": {
-            "n8n": {
-              "image": "n8nio/n8n",
-              "current_tag": "2.11.4",
-              "target_tag": "2.15.0"
-            }
-          },
-          "python_updates": {},
-          "severity": "LOW",
-          "security_count": 0,
-          "update_count": 1,
-          "lokal_update": false,
-          "lokal_update_requested_at": null,
-          "kunden_update": false,
-          "kunden_update_requested_at": null
-        },
-        "06_RAG_Pipeline": {
-          "services": {
-            "alpine": {
-              "image": "alpine",
-              "current_tag": "latest",
-              "target_tag": "?"
-            },
-            "curl": {
-              "image": "curlimages/curl",
-              "current_tag": "latest",
-              "target_tag": "?"
-            }
-          },
-          "python_updates": {
-            "pyjwt": {
-              "current": "2.11.0",
-              "target": "2.12.1",
-              "is_security": true
-            },
-            "python-dotenv": {
-              "current": "1.2.1",
-              "target": "1.2.2",
-              "is_security": false
-            },
-            "pyyaml": {
-              "current": "6.0.2",
-              "target": "6.0.3",
-              "is_security": false
-            }
-          },
-          "severity": "HIGH",
-          "security_count": 1,
-          "update_count": 5,
-          "lokal_update": false,
-          "lokal_update_requested_at": null,
-          "kunden_update": false,
-          "kunden_update_requested_at": null
-        },
-        "07_Agentic_File_Analyse": {
-          "services": {},
-          "python_updates": {
-            "python-dotenv": {
-              "current": "1.2.1",
-              "target": "1.2.2",
-              "is_security": false
-            },
-            "reportlab": {
-              "current": "4.4.7",
-              "target": "4.4.10",
-              "is_security": false
-            },
-            "websockets": {
-              "current": "15.0.1",
-              "target": "16.0",
-              "is_security": false
-            }
-          },
-          "severity": "LOW",
-          "security_count": 0,
-          "update_count": 3,
-          "lokal_update": false,
-          "lokal_update_requested_at": null,
-          "kunden_update": false,
-          "kunden_update_requested_at": null
-        },
-        "08_ChatGPT_Ersatz": {
-          "services": {
-            "open-webui": {
-              "image": "ghcr.io/open-webui/open-webui",
-              "current_tag": "v0.8.8",
-              "target_tag": "v0.8.12"
-            },
-            "searxng": {
-              "image": "searxng/searxng",
-              "current_tag": "latest",
-              "target_tag": "?"
-            }
-          },
-          "python_updates": {},
-          "severity": "HIGH",
-          "security_count": 1,
-          "update_count": 2,
-          "lokal_update": false,
-          "lokal_update_requested_at": null,
-          "kunden_update": false,
-          "kunden_update_requested_at": null
-        },
-        "09_Newsletter_Agent": {
-          "services": {},
-          "python_updates": {
-            "tzdata": {
-              "current": "2025.3",
-              "target": "2026.1",
-              "is_security": false
-            }
-          },
-          "severity": "LOW",
-          "security_count": 0,
-          "update_count": 1,
-          "lokal_update": false,
-          "lokal_update_requested_at": null,
-          "kunden_update": false,
-          "kunden_update_requested_at": null
-        },
-        "11_RAG_Mit_OpenWebUI": {
-          "services": {
-            "open-webui": {
-              "image": "ghcr.io/open-webui/open-webui",
-              "current_tag": "v0.8.8",
-              "target_tag": "v0.8.12"
-            },
-            "curl": {
-              "image": "curlimages/curl",
-              "current_tag": "8.12.1",
-              "target_tag": "8.19.0"
-            },
-            "docker": {
-              "image": "docker",
-              "current_tag": "27.5.1-cli",
-              "target_tag": "29.4.0-windowsservercore-ltsc2025"
-            }
-          },
-          "python_updates": {
-            "python-dotenv": {
-              "current": "1.2.1",
-              "target": "1.2.2",
-              "is_security": false
-            },
-            "pyyaml": {
-              "current": "6.0.2",
-              "target": "6.0.3",
-              "is_security": false
-            },
-            "pyjwt": {
-              "current": "2.11.0",
-              "target": "2.12.1",
-              "is_security": true
-            }
-          },
-          "severity": "HIGH",
-          "security_count": 2,
-          "update_count": 6,
-          "lokal_update": false,
-          "lokal_update_requested_at": null,
-          "kunden_update": false,
-          "kunden_update_requested_at": null
-        }
-      }
-    },
-    "2026-04-09T08-14-45": {
-      "scanned_at": "2026-04-09T08:14:45",
-      "projects": {
-        "00_Vergleich_OCR_Pipelines": {
-          "services": {},
-          "python_updates": {
-            "pillow": {
-              "current": "12.1.0",
-              "target": "12.2.0",
-              "is_security": true
-            },
-            "pymupdf": {
-              "current": "1.27.1",
-              "target": "1.27.2.2",
-              "is_security": false
-            },
-            "python-multipart": {
-              "current": "0.0.22",
-              "target": "0.0.24",
-              "is_security": false
-            },
-            "torch": {
-              "current": "2.4.1",
-              "target": "2.11.0",
-              "is_security": true
-            }
-          },
-          "severity": "CRITICAL",
-          "security_count": 2,
-          "update_count": 4,
-          "lokal_update": false,
-          "lokal_update_requested_at": null,
-          "kunden_update": false,
-          "kunden_update_requested_at": null
-        },
-        "01_chatbot_rag_mvp": {
-          "services": {
-            "postgres": {
-              "image": "postgres",
-              "current_tag": "16.13-alpine3.23",
-              "target_tag": "18.3-trixie"
-            },
-            "alpine": {
-              "image": "alpine",
-              "current_tag": "latest",
-              "target_tag": "?"
-            },
-            "qdrant": {
-              "image": "qdrant/qdrant",
-              "current_tag": "v1.16.3",
-              "target_tag": "v1.17.1"
-            },
-            "n8n": {
-              "image": "n8nio/n8n",
-              "current_tag": "2.11.4",
-              "target_tag": "2.15.0"
-            }
-          },
-          "python_updates": {
-            "python-dotenv": {
-              "current": "1.2.1",
-              "target": "1.2.2",
-              "is_security": false
-            }
-          },
-          "severity": "HIGH",
-          "security_count": 1,
-          "update_count": 5,
-          "lokal_update": false,
-          "lokal_update_requested_at": null,
-          "kunden_update": false,
-          "kunden_update_requested_at": null
-        },
-        "02_chatbot_rag_multiusers": {
-          "services": {},
-          "python_updates": {
-            "psutil": {
-              "current": "7.2.1",
-              "target": "7.2.2",
-              "is_security": false
-            },
-            "pyjwt": {
-              "current": "2.10.1",
-              "target": "2.12.1",
-              "is_security": true
-            },
-            "pypdf": {
-              "current": "6.7.0",
-              "target": "6.9.2",
-              "is_security": true
-            },
-            "python-dotenv": {
-              "current": "1.2.1",
-              "target": "1.2.2",
-              "is_security": false
-            },
-            "pyyaml": {
-              "current": "6.0.2",
-              "target": "6.0.3",
-              "is_security": false
-            }
-          },
-          "severity": "HIGH",
-          "security_count": 2,
-          "update_count": 5,
-          "lokal_update": false,
-          "lokal_update_requested_at": null,
-          "kunden_update": false,
-          "kunden_update_requested_at": null
-        },
-        "03_OpenWeb_UI_Chatbots": {
-          "services": {
-            "postgres": {
-              "image": "postgres",
-              "current_tag": "16.13-alpine3.23",
-              "target_tag": "18.3-trixie"
-            },
-            "open-webui": {
-              "image": "ghcr.io/open-webui/open-webui",
-              "current_tag": "v0.8.8",
-              "target_tag": "v0.8.12"
-            }
-          },
-          "python_updates": {
-            "python-dotenv": {
-              "current": "1.2.1",
-              "target": "1.2.2",
-              "is_security": false
-            }
-          },
-          "severity": "HIGH",
-          "security_count": 1,
-          "update_count": 3,
-          "lokal_update": false,
-          "lokal_update_requested_at": null,
-          "kunden_update": false,
-          "kunden_update_requested_at": null
-        },
-        "04_Vertragsmanager": {
-          "services": {},
-          "python_updates": {
-            "langgraph": {
-              "current": "1.0.8",
-              "target": "1.1.6",
-              "is_security": true
-            },
-            "langsmith": {
-              "current": "0.7.1",
-              "target": "0.7.29",
-              "is_security": false
-            },
-            "python-dotenv": {
-              "current": "1.2.1",
-              "target": "1.2.2",
-              "is_security": false
-            },
-            "python-multipart": {
-              "current": "0.0.22",
-              "target": "0.0.24",
-              "is_security": false
-            },
-            "spacy": {
-              "current": "3.8.11",
-              "target": "3.8.14",
-              "is_security": false
-            }
-          },
-          "severity": "HIGH",
-          "security_count": 1,
-          "update_count": 5,
-          "lokal_update": false,
-          "lokal_update_requested_at": null,
-          "kunden_update": false,
-          "kunden_update_requested_at": null
-        },
-        "05_LinkedIn_Post_Automation": {
-          "services": {
-            "postgres": {
-              "image": "postgres",
-              "current_tag": "16.13-alpine3.23",
-              "target_tag": "18.3-trixie"
-            },
-            "n8n": {
-              "image": "n8nio/n8n",
-              "current_tag": "2.11.4",
-              "target_tag": "2.15.0"
-            }
-          },
-          "python_updates": {},
-          "severity": "LOW",
-          "security_count": 0,
-          "update_count": 2,
-          "lokal_update": false,
-          "lokal_update_requested_at": null,
-          "kunden_update": false,
-          "kunden_update_requested_at": null
-        },
-        "06_RAG_Pipeline": {
-          "services": {
-            "postgres": {
-              "image": "postgres",
-              "current_tag": "16.13-alpine3.23",
-              "target_tag": "18.3-trixie"
-            },
-            "alpine": {
-              "image": "alpine",
-              "current_tag": "latest",
-              "target_tag": "?"
-            },
-            "curl": {
-              "image": "curlimages/curl",
-              "current_tag": "latest",
-              "target_tag": "?"
-            }
-          },
-          "python_updates": {
-            "pyjwt": {
-              "current": "2.11.0",
-              "target": "2.12.1",
-              "is_security": true
-            },
-            "python-dotenv": {
-              "current": "1.2.1",
-              "target": "1.2.2",
-              "is_security": false
-            },
-            "pyyaml": {
-              "current": "6.0.2",
-              "target": "6.0.3",
-              "is_security": false
-            }
-          },
-          "severity": "HIGH",
-          "security_count": 1,
-          "update_count": 6,
-          "lokal_update": false,
-          "lokal_update_requested_at": null,
-          "kunden_update": false,
-          "kunden_update_requested_at": null
-        },
-        "07_Agentic_File_Analyse": {
-          "services": {},
-          "python_updates": {
-            "python-dotenv": {
-              "current": "1.2.1",
-              "target": "1.2.2",
-              "is_security": false
-            },
-            "reportlab": {
-              "current": "4.4.7",
-              "target": "4.4.10",
-              "is_security": false
-            },
-            "websockets": {
-              "current": "15.0.1",
-              "target": "16.0",
-              "is_security": false
-            }
-          },
-          "severity": "LOW",
-          "security_count": 0,
-          "update_count": 3,
-          "lokal_update": false,
-          "lokal_update_requested_at": null,
-          "kunden_update": false,
-          "kunden_update_requested_at": null
-        },
-        "08_ChatGPT_Ersatz": {
-          "services": {
-            "open-webui": {
-              "image": "ghcr.io/open-webui/open-webui",
-              "current_tag": "v0.8.8",
-              "target_tag": "v0.8.12"
-            },
-            "searxng": {
-              "image": "searxng/searxng",
-              "current_tag": "latest",
-              "target_tag": "?"
-            }
-          },
-          "python_updates": {},
-          "severity": "HIGH",
-          "security_count": 1,
-          "update_count": 2,
-          "lokal_update": false,
-          "lokal_update_requested_at": null,
-          "kunden_update": false,
-          "kunden_update_requested_at": null
-        },
-        "09_Newsletter_Agent": {
-          "services": {},
-          "python_updates": {
-            "tzdata": {
-              "current": "2025.3",
-              "target": "2026.1",
-              "is_security": false
-            }
-          },
-          "severity": "LOW",
-          "security_count": 0,
-          "update_count": 1,
-          "lokal_update": false,
-          "lokal_update_requested_at": null,
-          "kunden_update": false,
-          "kunden_update_requested_at": null
-        },
-        "11_RAG_Mit_OpenWebUI": {
+          "update_available": true,
+          "agent_enabled": true,
+          "runtime_location": "local",
+          "lokal_update_requested": true,
+          "lokal_update_requested_at": "2026-04-13T12:29:04",
+          "lokal_update_done": false,
+          "lokal_update_done_at": null,
+          "lokal_update_failed": false,
+          "lokal_update_failed_at": null,
+          "lokal_result_mail_sent": false,
+          "lokal_result_mail_sent_at": null,
+          "lokal_report_path": null,
+          "lokal_report_status": null,
+          "freigabe_mail_sent": false,
+          "freigabe_mail_last_sent_at": null,
+          "kunden_update_requested": false,
+          "kunden_update_requested_at": null,
+          "kunden_update_done": false,
+          "kunden_update_done_at": null,
+          "kunden_update_failed": false,
+          "kunden_update_failed_at": null,
+          "closed": false,
+          "closed_at": null,
+          "last_error": null,
+          "customer_approvals": {},
           "services": {
             "open-webui": {
               "image": "ghcr.io/open-webui/open-webui",
@@ -1297,7 +964,7 @@
             "docker": {
               "image": "docker",
               "current_tag": "27.5.1-cli",
-              "target_tag": "29.4.0-windowsservercore-ltsc2025"
+              "target_tag": "29.4.0-rc.1-windowsservercore-ltsc2025"
             }
           },
           "python_updates": {
@@ -1319,678 +986,7 @@
           },
           "severity": "HIGH",
           "security_count": 2,
-          "update_count": 7,
-          "lokal_update": false,
-          "lokal_update_requested_at": null,
-          "kunden_update": false,
-          "kunden_update_requested_at": null
-        }
-      }
-    },
-    "2026-04-09T09-03-13": {
-      "scanned_at": "2026-04-09T09:03:13",
-      "projects": {
-        "02_chatbot_rag_multiusers": {
-          "services": {},
-          "python_updates": {
-            "psutil": {
-              "current": "7.2.1",
-              "target": "7.2.2",
-              "is_security": false
-            },
-            "pyjwt": {
-              "current": "2.10.1",
-              "target": "2.12.1",
-              "is_security": true
-            },
-            "pypdf": {
-              "current": "6.7.0",
-              "target": "6.9.2",
-              "is_security": true
-            },
-            "python-dotenv": {
-              "current": "1.2.1",
-              "target": "1.2.2",
-              "is_security": false
-            },
-            "pyyaml": {
-              "current": "6.0.2",
-              "target": "6.0.3",
-              "is_security": false
-            }
-          },
-          "severity": "HIGH",
-          "security_count": 2,
-          "update_count": 5,
-          "lokal_update": false,
-          "lokal_update_requested_at": null,
-          "kunden_update": false,
-          "kunden_update_requested_at": null
-        },
-        "03_OpenWeb_UI_Chatbots": {
-          "services": {
-            "postgres": {
-              "image": "postgres",
-              "current_tag": "16.13-alpine3.23",
-              "target_tag": "18.3-trixie"
-            },
-            "open-webui": {
-              "image": "ghcr.io/open-webui/open-webui",
-              "current_tag": "v0.8.8",
-              "target_tag": "v0.8.12"
-            }
-          },
-          "python_updates": {
-            "python-dotenv": {
-              "current": "1.2.1",
-              "target": "1.2.2",
-              "is_security": false
-            }
-          },
-          "severity": "HIGH",
-          "security_count": 1,
-          "update_count": 3,
-          "lokal_update": false,
-          "lokal_update_requested_at": null,
-          "kunden_update": false,
-          "kunden_update_requested_at": null
-        },
-        "05_LinkedIn_Post_Automation": {
-          "services": {
-            "postgres": {
-              "image": "postgres",
-              "current_tag": "16.13-alpine3.23",
-              "target_tag": "18.3-trixie"
-            },
-            "n8n": {
-              "image": "n8nio/n8n",
-              "current_tag": "2.11.4",
-              "target_tag": "2.15.0"
-            }
-          },
-          "python_updates": {},
-          "severity": "LOW",
-          "security_count": 0,
-          "update_count": 2,
-          "lokal_update": false,
-          "lokal_update_requested_at": null,
-          "kunden_update": false,
-          "kunden_update_requested_at": null
-        },
-        "06_RAG_Pipeline": {
-          "services": {
-            "postgres": {
-              "image": "postgres",
-              "current_tag": "16.13-alpine3.23",
-              "target_tag": "18.3-trixie"
-            },
-            "alpine": {
-              "image": "alpine",
-              "current_tag": "latest",
-              "target_tag": "?"
-            },
-            "curl": {
-              "image": "curlimages/curl",
-              "current_tag": "latest",
-              "target_tag": "?"
-            }
-          },
-          "python_updates": {
-            "pyjwt": {
-              "current": "2.11.0",
-              "target": "2.12.1",
-              "is_security": true
-            },
-            "python-dotenv": {
-              "current": "1.2.1",
-              "target": "1.2.2",
-              "is_security": false
-            },
-            "pyyaml": {
-              "current": "6.0.2",
-              "target": "6.0.3",
-              "is_security": false
-            }
-          },
-          "severity": "HIGH",
-          "security_count": 1,
-          "update_count": 6,
-          "lokal_update": false,
-          "lokal_update_requested_at": null,
-          "kunden_update": false,
-          "kunden_update_requested_at": null
-        },
-        "08_ChatGPT_Ersatz": {
-          "services": {
-            "open-webui": {
-              "image": "ghcr.io/open-webui/open-webui",
-              "current_tag": "v0.8.8",
-              "target_tag": "v0.8.12"
-            },
-            "searxng": {
-              "image": "searxng/searxng",
-              "current_tag": "latest",
-              "target_tag": "?"
-            }
-          },
-          "python_updates": {},
-          "severity": "HIGH",
-          "security_count": 1,
-          "update_count": 2,
-          "lokal_update": false,
-          "lokal_update_requested_at": null,
-          "kunden_update": false,
-          "kunden_update_requested_at": null
-        },
-        "09_Newsletter_Agent": {
-          "services": {},
-          "python_updates": {
-            "tzdata": {
-              "current": "2025.3",
-              "target": "2026.1",
-              "is_security": false
-            }
-          },
-          "severity": "LOW",
-          "security_count": 0,
-          "update_count": 1,
-          "lokal_update": false,
-          "lokal_update_requested_at": null,
-          "kunden_update": false,
-          "kunden_update_requested_at": null
-        },
-        "11_RAG_Mit_OpenWebUI": {
-          "services": {
-            "open-webui": {
-              "image": "ghcr.io/open-webui/open-webui",
-              "current_tag": "v0.8.8",
-              "target_tag": "v0.8.12"
-            },
-            "postgres": {
-              "image": "postgres",
-              "current_tag": "16.13-alpine3.23",
-              "target_tag": "18.3-trixie"
-            },
-            "curl": {
-              "image": "curlimages/curl",
-              "current_tag": "8.12.1",
-              "target_tag": "8.19.0"
-            },
-            "docker": {
-              "image": "docker",
-              "current_tag": "27.5.1-cli",
-              "target_tag": "29.4.0-windowsservercore-ltsc2025"
-            }
-          },
-          "python_updates": {
-            "python-dotenv": {
-              "current": "1.2.1",
-              "target": "1.2.2",
-              "is_security": false
-            },
-            "pyyaml": {
-              "current": "6.0.2",
-              "target": "6.0.3",
-              "is_security": false
-            },
-            "pyjwt": {
-              "current": "2.11.0",
-              "target": "2.12.1",
-              "is_security": true
-            }
-          },
-          "severity": "HIGH",
-          "security_count": 2,
-          "update_count": 7,
-          "lokal_update": false,
-          "lokal_update_requested_at": null,
-          "kunden_update": false,
-          "kunden_update_requested_at": null
-        }
-      }
-    },
-    "2026-04-09T11-09-57": {
-      "scanned_at": "2026-04-09T11:09:57",
-      "projects": {
-        "02_chatbot_rag_multiusers": {
-          "services": {},
-          "python_updates": {
-            "psutil": {
-              "current": "7.2.1",
-              "target": "7.2.2",
-              "is_security": false
-            },
-            "pyjwt": {
-              "current": "2.10.1",
-              "target": "2.12.1",
-              "is_security": true
-            },
-            "pypdf": {
-              "current": "6.7.0",
-              "target": "6.9.2",
-              "is_security": true
-            },
-            "python-dotenv": {
-              "current": "1.2.1",
-              "target": "1.2.2",
-              "is_security": false
-            },
-            "pyyaml": {
-              "current": "6.0.2",
-              "target": "6.0.3",
-              "is_security": false
-            }
-          },
-          "severity": "HIGH",
-          "security_count": 2,
-          "update_count": 5,
-          "lokal_update": false,
-          "lokal_update_requested_at": null,
-          "kunden_update": false,
-          "kunden_update_requested_at": null
-        },
-        "03_OpenWeb_UI_Chatbots": {
-          "services": {
-            "postgres": {
-              "image": "postgres",
-              "current_tag": "16.13-alpine3.23",
-              "target_tag": "18.3-trixie"
-            },
-            "open-webui": {
-              "image": "ghcr.io/open-webui/open-webui",
-              "current_tag": "v0.8.8",
-              "target_tag": "v0.8.12"
-            },
-            "kai-updater": {
-              "image": "ghcr.io/hbourichakabema/kai-updater",
-              "current_tag": "latest",
-              "target_tag": "?"
-            }
-          },
-          "python_updates": {
-            "python-dotenv": {
-              "current": "1.2.1",
-              "target": "1.2.2",
-              "is_security": false
-            }
-          },
-          "severity": "HIGH",
-          "security_count": 1,
-          "update_count": 4,
-          "lokal_update": false,
-          "lokal_update_requested_at": null,
-          "kunden_update": false,
-          "kunden_update_requested_at": null
-        },
-        "05_LinkedIn_Post_Automation": {
-          "services": {
-            "postgres": {
-              "image": "postgres",
-              "current_tag": "16.13-alpine3.23",
-              "target_tag": "18.3-trixie"
-            },
-            "n8n": {
-              "image": "n8nio/n8n",
-              "current_tag": "2.11.4",
-              "target_tag": "2.15.0"
-            },
-            "kai-updater": {
-              "image": "ghcr.io/hbourichakabema/kai-updater",
-              "current_tag": "latest",
-              "target_tag": "?"
-            }
-          },
-          "python_updates": {},
-          "severity": "LOW",
-          "security_count": 0,
-          "update_count": 3,
-          "lokal_update": false,
-          "lokal_update_requested_at": null,
-          "kunden_update": false,
-          "kunden_update_requested_at": null
-        },
-        "06_RAG_Pipeline": {
-          "services": {
-            "postgres": {
-              "image": "postgres",
-              "current_tag": "16.13-alpine3.23",
-              "target_tag": "18.3-trixie"
-            },
-            "kai-updater": {
-              "image": "ghcr.io/hbourichakabema/kai-updater",
-              "current_tag": "latest",
-              "target_tag": "?"
-            }
-          },
-          "python_updates": {
-            "pyjwt": {
-              "current": "2.11.0",
-              "target": "2.12.1",
-              "is_security": true
-            },
-            "python-dotenv": {
-              "current": "1.2.1",
-              "target": "1.2.2",
-              "is_security": false
-            },
-            "pyyaml": {
-              "current": "6.0.2",
-              "target": "6.0.3",
-              "is_security": false
-            }
-          },
-          "severity": "HIGH",
-          "security_count": 1,
-          "update_count": 5,
-          "lokal_update": false,
-          "lokal_update_requested_at": null,
-          "kunden_update": false,
-          "kunden_update_requested_at": null
-        },
-        "08_ChatGPT_Ersatz": {
-          "services": {
-            "open-webui": {
-              "image": "ghcr.io/open-webui/open-webui",
-              "current_tag": "v0.8.8",
-              "target_tag": "v0.8.12"
-            },
-            "kai-updater": {
-              "image": "ghcr.io/hbourichakabema/kai-updater",
-              "current_tag": "latest",
-              "target_tag": "?"
-            }
-          },
-          "python_updates": {},
-          "severity": "HIGH",
-          "security_count": 1,
-          "update_count": 2,
-          "lokal_update": false,
-          "lokal_update_requested_at": null,
-          "kunden_update": false,
-          "kunden_update_requested_at": null
-        },
-        "09_Newsletter_Agent": {
-          "services": {
-            "kai-updater": {
-              "image": "ghcr.io/hbourichakabema/kai-updater",
-              "current_tag": "latest",
-              "target_tag": "?"
-            }
-          },
-          "python_updates": {
-            "tzdata": {
-              "current": "2025.3",
-              "target": "2026.1",
-              "is_security": false
-            }
-          },
-          "severity": "LOW",
-          "security_count": 0,
-          "update_count": 2,
-          "lokal_update": false,
-          "lokal_update_requested_at": null,
-          "kunden_update": false,
-          "kunden_update_requested_at": null
-        },
-        "11_RAG_Mit_OpenWebUI": {
-          "services": {
-            "open-webui": {
-              "image": "ghcr.io/open-webui/open-webui",
-              "current_tag": "v0.8.8",
-              "target_tag": "v0.8.12"
-            },
-            "postgres": {
-              "image": "postgres",
-              "current_tag": "16.13-alpine3.23",
-              "target_tag": "18.3-trixie"
-            },
-            "curl": {
-              "image": "curlimages/curl",
-              "current_tag": "8.12.1",
-              "target_tag": "8.19.0"
-            },
-            "docker": {
-              "image": "docker",
-              "current_tag": "27.5.1-cli",
-              "target_tag": "29.4.0-windowsservercore-ltsc2025"
-            },
-            "kai-updater": {
-              "image": "ghcr.io/hbourichakabema/kai-updater",
-              "current_tag": "latest",
-              "target_tag": "?"
-            }
-          },
-          "python_updates": {
-            "python-dotenv": {
-              "current": "1.2.1",
-              "target": "1.2.2",
-              "is_security": false
-            },
-            "pyyaml": {
-              "current": "6.0.2",
-              "target": "6.0.3",
-              "is_security": false
-            },
-            "pyjwt": {
-              "current": "2.11.0",
-              "target": "2.12.1",
-              "is_security": true
-            }
-          },
-          "severity": "HIGH",
-          "security_count": 2,
-          "update_count": 8,
-          "lokal_update": false,
-          "lokal_update_requested_at": null,
-          "kunden_update": false,
-          "kunden_update_requested_at": null
-        }
-      }
-    },
-    "2026-04-09T11-13-01": {
-      "scanned_at": "2026-04-09T11:13:01",
-      "projects": {
-        "02_chatbot_rag_multiusers": {
-          "services": {},
-          "python_updates": {
-            "psutil": {
-              "current": "7.2.1",
-              "target": "7.2.2",
-              "is_security": false
-            },
-            "pyjwt": {
-              "current": "2.10.1",
-              "target": "2.12.1",
-              "is_security": true
-            },
-            "pypdf": {
-              "current": "6.7.0",
-              "target": "6.9.2",
-              "is_security": true
-            },
-            "python-dotenv": {
-              "current": "1.2.1",
-              "target": "1.2.2",
-              "is_security": false
-            },
-            "pyyaml": {
-              "current": "6.0.2",
-              "target": "6.0.3",
-              "is_security": false
-            }
-          },
-          "severity": "HIGH",
-          "security_count": 2,
-          "update_count": 5,
-          "lokal_update": true,
-          "lokal_update_requested_at": "2026-04-09T11:33:20",
-          "kunden_update": false,
-          "kunden_update_requested_at": null
-        },
-        "03_OpenWeb_UI_Chatbots": {
-          "services": {
-            "postgres": {
-              "image": "postgres",
-              "current_tag": "16.13-alpine3.23",
-              "target_tag": "18.3-trixie"
-            },
-            "open-webui": {
-              "image": "ghcr.io/open-webui/open-webui",
-              "current_tag": "v0.8.8",
-              "target_tag": "v0.8.12"
-            }
-          },
-          "python_updates": {
-            "python-dotenv": {
-              "current": "1.2.1",
-              "target": "1.2.2",
-              "is_security": false
-            }
-          },
-          "severity": "HIGH",
-          "security_count": 1,
-          "update_count": 3,
-          "lokal_update": true,
-          "lokal_update_requested_at": "2026-04-09T11:33:20",
-          "kunden_update": false,
-          "kunden_update_requested_at": null
-        },
-        "05_LinkedIn_Post_Automation": {
-          "services": {
-            "postgres": {
-              "image": "postgres",
-              "current_tag": "16.13-alpine3.23",
-              "target_tag": "18.3-trixie"
-            },
-            "n8n": {
-              "image": "n8nio/n8n",
-              "current_tag": "2.11.4",
-              "target_tag": "2.15.0"
-            }
-          },
-          "python_updates": {},
-          "severity": "LOW",
-          "security_count": 0,
-          "update_count": 2,
-          "lokal_update": true,
-          "lokal_update_requested_at": "2026-04-09T11:33:20",
-          "kunden_update": false,
-          "kunden_update_requested_at": null
-        },
-        "06_RAG_Pipeline": {
-          "services": {
-            "postgres": {
-              "image": "postgres",
-              "current_tag": "16.13-alpine3.23",
-              "target_tag": "18.3-trixie"
-            }
-          },
-          "python_updates": {
-            "pyjwt": {
-              "current": "2.11.0",
-              "target": "2.12.1",
-              "is_security": true
-            },
-            "python-dotenv": {
-              "current": "1.2.1",
-              "target": "1.2.2",
-              "is_security": false
-            },
-            "pyyaml": {
-              "current": "6.0.2",
-              "target": "6.0.3",
-              "is_security": false
-            }
-          },
-          "severity": "HIGH",
-          "security_count": 1,
-          "update_count": 4,
-          "lokal_update": true,
-          "lokal_update_requested_at": "2026-04-09T11:33:20",
-          "kunden_update": false,
-          "kunden_update_requested_at": null
-        },
-        "08_ChatGPT_Ersatz": {
-          "services": {
-            "open-webui": {
-              "image": "ghcr.io/open-webui/open-webui",
-              "current_tag": "v0.8.8",
-              "target_tag": "v0.8.12"
-            }
-          },
-          "python_updates": {},
-          "severity": "HIGH",
-          "security_count": 1,
-          "update_count": 1,
-          "lokal_update": true,
-          "lokal_update_requested_at": "2026-04-09T11:33:20",
-          "kunden_update": false,
-          "kunden_update_requested_at": null
-        },
-        "09_Newsletter_Agent": {
-          "services": {},
-          "python_updates": {
-            "tzdata": {
-              "current": "2025.3",
-              "target": "2026.1",
-              "is_security": false
-            }
-          },
-          "severity": "LOW",
-          "security_count": 0,
-          "update_count": 1,
-          "lokal_update": true,
-          "lokal_update_requested_at": "2026-04-09T11:33:20",
-          "kunden_update": false,
-          "kunden_update_requested_at": null
-        },
-        "11_RAG_Mit_OpenWebUI": {
-          "services": {
-            "open-webui": {
-              "image": "ghcr.io/open-webui/open-webui",
-              "current_tag": "v0.8.8",
-              "target_tag": "v0.8.12"
-            },
-            "postgres": {
-              "image": "postgres",
-              "current_tag": "16.13-alpine3.23",
-              "target_tag": "18.3-trixie"
-            },
-            "curl": {
-              "image": "curlimages/curl",
-              "current_tag": "8.12.1",
-              "target_tag": "8.19.0"
-            },
-            "docker": {
-              "image": "docker",
-              "current_tag": "27.5.1-cli",
-              "target_tag": "29.4.0-windowsservercore-ltsc2025"
-            }
-          },
-          "python_updates": {
-            "python-dotenv": {
-              "current": "1.2.1",
-              "target": "1.2.2",
-              "is_security": false
-            },
-            "pyyaml": {
-              "current": "6.0.2",
-              "target": "6.0.3",
-              "is_security": false
-            },
-            "pyjwt": {
-              "current": "2.11.0",
-              "target": "2.12.1",
-              "is_security": true
-            }
-          },
-          "severity": "HIGH",
-          "security_count": 2,
-          "update_count": 7,
-          "lokal_update": true,
-          "lokal_update_requested_at": "2026-04-09T11:33:20",
-          "kunden_update": false,
-          "kunden_update_requested_at": null
+          "update_count": 7
         }
       }
     }
