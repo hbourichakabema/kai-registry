@@ -1244,8 +1244,8 @@
           "customer_approvals": {
             "kai__MlVM-T9l2PuQGSdoXtsDA": {
               "email": "h.bouricha@kcart.de",
-              "email_sent": false,
-              "email_sent_at": null,
+              "email_sent": true,
+              "email_sent_at": "2026-04-13T15:37:57",
               "approved": false,
               "approved_at": null,
               "update_done": false,
