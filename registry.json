@@ -1151,7 +1151,7 @@
     },
     "2026-04-13T15-28-29": {
       "scanned_at": "2026-04-13T15:28:29",
-      "batch_closed": false,
+      "batch_closed": true,
       "projects": {
         "03_OpenWeb_UI_Chatbots": {
           "update_available": true,
@@ -1209,7 +1209,8 @@
           "security_count": 1,
           "update_count": 3
         }
-      }
+      },
+      "batch_closed_at": "2026-04-13T15:32:44"
     }
   }
 }
