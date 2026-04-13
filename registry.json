@@ -1211,6 +1211,68 @@
         }
       },
       "batch_closed_at": "2026-04-13T15:32:44"
+    },
+    "2026-04-13T15-33-29": {
+      "scanned_at": "2026-04-13T15:33:29",
+      "batch_closed": false,
+      "projects": {
+        "03_OpenWeb_UI_Chatbots": {
+          "update_available": true,
+          "agent_enabled": true,
+          "runtime_location": "local",
+          "lokal_update_requested": false,
+          "lokal_update_requested_at": null,
+          "lokal_update_done": false,
+          "lokal_update_done_at": null,
+          "lokal_update_failed": false,
+          "lokal_update_failed_at": null,
+          "lokal_result_mail_sent": false,
+          "lokal_result_mail_sent_at": null,
+          "lokal_report_path": null,
+          "lokal_report_status": null,
+          "freigabe_mail_sent": false,
+          "freigabe_mail_last_sent_at": null,
+          "kunden_update_requested": false,
+          "kunden_update_requested_at": null,
+          "kunden_update_done": false,
+          "kunden_update_done_at": null,
+          "kunden_update_failed": false,
+          "kunden_update_failed_at": null,
+          "closed": false,
+          "closed_at": null,
+          "last_error": null,
+          "customer_approvals": {
+            "kai__MlVM-T9l2PuQGSdoXtsDA": {
+              "email": "h.bouricha@kcart.de",
+              "email_sent": false,
+              "email_sent_at": null,
+              "approved": false,
+              "approved_at": null,
+              "update_done": false,
+              "update_done_at": null,
+              "update_failed": false,
+              "update_failed_at": null
+            }
+          },
+          "services": {
+            "open-webui": {
+              "image": "ghcr.io/open-webui/open-webui",
+              "current_tag": "v0.8.8",
+              "target_tag": "v0.8.12"
+            }
+          },
+          "python_updates": {
+            "python-dotenv": {
+              "current": "1.2.1",
+              "target": "1.2.2",
+              "is_security": false
+            }
+          },
+          "severity": "HIGH",
+          "security_count": 1,
+          "update_count": 3
+        }
+      }
     }
   }
 }
