@@ -1340,7 +1340,7 @@
     },
     "2026-04-13T16-10-02": {
       "scanned_at": "2026-04-13T16:10:02",
-      "batch_closed": false,
+      "batch_closed": true,
       "projects": {
         "03_OpenWeb_UI_Chatbots": {
           "update_available": true,
@@ -1374,8 +1374,8 @@
               "email_sent_at": "2026-04-13T16:15:34",
               "approved": true,
               "approved_at": "2026-04-13T16:21:04",
-              "update_done": false,
-              "update_done_at": null,
+              "update_done": true,
+              "update_done_at": "2026-04-13T14:38:07",
               "update_failed": false,
               "update_failed_at": null
             }
@@ -1399,7 +1399,7 @@
           "update_count": 3
         }
       },
-      "batch_closed_at": null
+      "batch_closed_at": "2026-04-13T14:38:07"
     }
   }
 }
