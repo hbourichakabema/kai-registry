@@ -2,7 +2,7 @@
   "batches": {
     "2026-04-09T14-14-25": {
       "scanned_at": "2026-04-09T14:14:25",
-      "batch_closed": false,
+      "batch_closed": true,
       "projects": {
         "02_chatbot_rag_multiusers": {
           "update_available": true,
@@ -284,11 +284,12 @@
           "security_count": 2,
           "update_count": 7
         }
-      }
+      },
+      "batch_closed_at": "2026-04-13T13:20:55"
     },
     "2026-04-13T12-01-22": {
       "scanned_at": "2026-04-13T12:01:22",
-      "batch_closed": false,
+      "batch_closed": true,
       "projects": {
         "02_chatbot_rag_multiusers": {
           "update_available": true,
@@ -636,11 +637,12 @@
           "security_count": 2,
           "update_count": 7
         }
-      }
+      },
+      "batch_closed_at": "2026-04-13T13:20:55"
     },
     "2026-04-13T12-22-15": {
       "scanned_at": "2026-04-13T12:22:15",
-      "batch_closed": false,
+      "batch_closed": true,
       "projects": {
         "02_chatbot_rag_multiusers": {
           "update_available": true,
@@ -961,7 +963,8 @@
           "security_count": 2,
           "update_count": 7
         }
-      }
+      },
+      "batch_closed_at": "2026-04-13T13:20:55"
     }
   }
 }
