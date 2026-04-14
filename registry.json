@@ -1592,7 +1592,7 @@
     },
     "2026-04-14T10-35-00": {
       "scanned_at": "2026-04-14T10:35:00",
-      "batch_closed": false,
+      "batch_closed": true,
       "projects": {
         "03_OpenWeb_UI_Chatbots": {
           "update_available": true,
@@ -1618,7 +1618,7 @@
           "kunden_update_failed_at": null,
           "closed": false,
           "closed_at": null,
-          "last_error": null,
+          "last_error": "Python updates failed",
           "customer_approvals": {
             "kai__MlVM-T9l2PuQGSdoXtsDA": {
               "email": "h.bouricha@kcart.de",
@@ -1628,8 +1628,8 @@
               "approved_at": "2026-04-14T10:45:57",
               "update_done": false,
               "update_done_at": null,
-              "update_failed": false,
-              "update_failed_at": null
+              "update_failed": true,
+              "update_failed_at": "2026-04-14T08:46:57"
             }
           },
           "services": {
@@ -1650,7 +1650,8 @@
           "security_count": 1,
           "update_count": 2
         }
-      }
+      },
+      "batch_closed_at": "2026-04-14T08:46:57"
     }
   }
 }
