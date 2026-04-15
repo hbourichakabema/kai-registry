@@ -2598,7 +2598,7 @@
     },
     "2026-04-15T15-40-11": {
       "scanned_at": "2026-04-15T15:40:11",
-      "batch_closed": false,
+      "batch_closed": true,
       "projects": {
         "02_chatbot_rag_multiusers": {
           "update_available": true,
@@ -2861,7 +2861,7 @@
           "update_count": 1
         }
       },
-      "batch_closed_at": null
+      "batch_closed_at": "2026-04-15T17:28:35"
     }
   }
 }
