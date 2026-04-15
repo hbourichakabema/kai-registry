@@ -2862,6 +2862,272 @@
         }
       },
       "batch_closed_at": "2026-04-15T17:28:35"
+    },
+    "2026-04-15T17-28-57": {
+      "scanned_at": "2026-04-15T17:28:57",
+      "batch_closed": false,
+      "projects": {
+        "02_chatbot_rag_multiusers": {
+          "update_available": true,
+          "agent_enabled": true,
+          "runtime_location": "local",
+          "lokal_update_requested": false,
+          "lokal_update_requested_at": null,
+          "lokal_update_done": false,
+          "lokal_update_done_at": null,
+          "lokal_update_failed": false,
+          "lokal_update_failed_at": null,
+          "lokal_result_mail_sent": false,
+          "lokal_result_mail_sent_at": null,
+          "lokal_report_path": null,
+          "lokal_report_status": null,
+          "freigabe_mail_sent": false,
+          "freigabe_mail_last_sent_at": null,
+          "kunden_update_requested": false,
+          "kunden_update_requested_at": null,
+          "kunden_update_done": false,
+          "kunden_update_done_at": null,
+          "kunden_update_failed": false,
+          "kunden_update_failed_at": null,
+          "closed": false,
+          "closed_at": null,
+          "last_error": null,
+          "customer_approvals": {},
+          "services": {},
+          "python_updates": {
+            "pypdf": {
+              "current": "6.9.2",
+              "target": "6.10.1",
+              "is_security": true
+            },
+            "pyyaml": {
+              "current": "6.0.2",
+              "target": "6.0.3",
+              "is_security": false
+            }
+          },
+          "severity": "HIGH",
+          "security_count": 1,
+          "update_count": 2
+        },
+        "03_OpenWeb_UI_Chatbots": {
+          "update_available": true,
+          "agent_enabled": true,
+          "runtime_location": "local",
+          "lokal_update_requested": false,
+          "lokal_update_requested_at": null,
+          "lokal_update_done": false,
+          "lokal_update_done_at": null,
+          "lokal_update_failed": false,
+          "lokal_update_failed_at": null,
+          "lokal_result_mail_sent": false,
+          "lokal_result_mail_sent_at": null,
+          "lokal_report_path": null,
+          "lokal_report_status": null,
+          "freigabe_mail_sent": false,
+          "freigabe_mail_last_sent_at": null,
+          "kunden_update_requested": false,
+          "kunden_update_requested_at": null,
+          "kunden_update_done": false,
+          "kunden_update_done_at": null,
+          "kunden_update_failed": false,
+          "kunden_update_failed_at": null,
+          "closed": false,
+          "closed_at": null,
+          "last_error": null,
+          "customer_approvals": {
+            "kai__MlVM-T9l2PuQGSdoXtsDA": {
+              "email": "h.bouricha@kcart.de",
+              "email_sent": false,
+              "email_sent_at": null,
+              "approved": false,
+              "approved_at": null,
+              "update_done": false,
+              "update_done_at": null,
+              "update_failed": false,
+              "update_failed_at": null
+            }
+          },
+          "services": {},
+          "python_updates": {
+            "python-dotenv": {
+              "current": "1.2.1",
+              "target": "1.2.2",
+              "is_security": false
+            }
+          },
+          "severity": "LOW",
+          "security_count": 0,
+          "update_count": 1
+        },
+        "06_RAG_Pipeline": {
+          "update_available": true,
+          "agent_enabled": true,
+          "runtime_location": "local",
+          "lokal_update_requested": false,
+          "lokal_update_requested_at": null,
+          "lokal_update_done": false,
+          "lokal_update_done_at": null,
+          "lokal_update_failed": false,
+          "lokal_update_failed_at": null,
+          "lokal_result_mail_sent": false,
+          "lokal_result_mail_sent_at": null,
+          "lokal_report_path": null,
+          "lokal_report_status": null,
+          "freigabe_mail_sent": false,
+          "freigabe_mail_last_sent_at": null,
+          "kunden_update_requested": false,
+          "kunden_update_requested_at": null,
+          "kunden_update_done": false,
+          "kunden_update_done_at": null,
+          "kunden_update_failed": false,
+          "kunden_update_failed_at": null,
+          "closed": false,
+          "closed_at": null,
+          "last_error": null,
+          "customer_approvals": {},
+          "services": {},
+          "python_updates": {
+            "pyjwt": {
+              "current": "2.11.0",
+              "target": "2.12.1",
+              "is_security": true
+            },
+            "python-dotenv": {
+              "current": "1.2.1",
+              "target": "1.2.2",
+              "is_security": false
+            },
+            "pyyaml": {
+              "current": "6.0.2",
+              "target": "6.0.3",
+              "is_security": false
+            }
+          },
+          "severity": "HIGH",
+          "security_count": 1,
+          "update_count": 3
+        },
+        "09_Newsletter_Agent": {
+          "update_available": true,
+          "agent_enabled": true,
+          "runtime_location": "local",
+          "lokal_update_requested": false,
+          "lokal_update_requested_at": null,
+          "lokal_update_done": false,
+          "lokal_update_done_at": null,
+          "lokal_update_failed": false,
+          "lokal_update_failed_at": null,
+          "lokal_result_mail_sent": false,
+          "lokal_result_mail_sent_at": null,
+          "lokal_report_path": null,
+          "lokal_report_status": null,
+          "freigabe_mail_sent": false,
+          "freigabe_mail_last_sent_at": null,
+          "kunden_update_requested": false,
+          "kunden_update_requested_at": null,
+          "kunden_update_done": false,
+          "kunden_update_done_at": null,
+          "kunden_update_failed": false,
+          "kunden_update_failed_at": null,
+          "closed": false,
+          "closed_at": null,
+          "last_error": null,
+          "customer_approvals": {},
+          "services": {},
+          "python_updates": {
+            "pillow": {
+              "current": "12.1.1",
+              "target": "12.2.0",
+              "is_security": true
+            },
+            "tzdata": {
+              "current": "2025.3",
+              "target": "2026.1",
+              "is_security": false
+            }
+          },
+          "severity": "HIGH",
+          "security_count": 1,
+          "update_count": 2
+        },
+        "10_Release_Updates": {
+          "update_available": true,
+          "agent_enabled": true,
+          "runtime_location": "unknown",
+          "lokal_update_requested": false,
+          "lokal_update_requested_at": null,
+          "lokal_update_done": false,
+          "lokal_update_done_at": null,
+          "lokal_update_failed": false,
+          "lokal_update_failed_at": null,
+          "lokal_result_mail_sent": false,
+          "lokal_result_mail_sent_at": null,
+          "lokal_report_path": null,
+          "lokal_report_status": null,
+          "freigabe_mail_sent": false,
+          "freigabe_mail_last_sent_at": null,
+          "kunden_update_requested": false,
+          "kunden_update_requested_at": null,
+          "kunden_update_done": false,
+          "kunden_update_done_at": null,
+          "kunden_update_failed": false,
+          "kunden_update_failed_at": null,
+          "closed": false,
+          "closed_at": null,
+          "last_error": null,
+          "customer_approvals": {},
+          "services": {
+            "release-watch-watchdog": {
+              "image": "release-watch-watchdog",
+              "current_tag": "latest",
+              "target_tag": "?"
+            }
+          },
+          "python_updates": {},
+          "severity": "LOW",
+          "security_count": 0,
+          "update_count": 2
+        },
+        "11_RAG_Mit_OpenWebUI": {
+          "update_available": true,
+          "agent_enabled": true,
+          "runtime_location": "local",
+          "lokal_update_requested": false,
+          "lokal_update_requested_at": null,
+          "lokal_update_done": false,
+          "lokal_update_done_at": null,
+          "lokal_update_failed": false,
+          "lokal_update_failed_at": null,
+          "lokal_result_mail_sent": false,
+          "lokal_result_mail_sent_at": null,
+          "lokal_report_path": null,
+          "lokal_report_status": null,
+          "freigabe_mail_sent": false,
+          "freigabe_mail_last_sent_at": null,
+          "kunden_update_requested": false,
+          "kunden_update_requested_at": null,
+          "kunden_update_done": false,
+          "kunden_update_done_at": null,
+          "kunden_update_failed": false,
+          "kunden_update_failed_at": null,
+          "closed": false,
+          "closed_at": null,
+          "last_error": null,
+          "customer_approvals": {},
+          "services": {},
+          "python_updates": {
+            "pyyaml": {
+              "current": "6.0.2",
+              "target": "6.0.3",
+              "is_security": false
+            }
+          },
+          "severity": "LOW",
+          "security_count": 0,
+          "update_count": 1
+        }
+      }
     }
   }
 }
