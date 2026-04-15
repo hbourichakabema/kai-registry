@@ -2608,12 +2608,12 @@
           "lokal_update_requested_at": "2026-04-15T15:41:00",
           "lokal_update_done": false,
           "lokal_update_done_at": null,
-          "lokal_update_failed": true,
-          "lokal_update_failed_at": "2026-04-15T13:50:46",
+          "lokal_update_failed": false,
+          "lokal_update_failed_at": null,
           "lokal_result_mail_sent": false,
           "lokal_result_mail_sent_at": null,
           "lokal_report_path": "/project/update_tests/reports/local_update_report_20260415_135045.json",
-          "lokal_report_status": "failed",
+          "lokal_report_status": null,
           "freigabe_mail_sent": false,
           "freigabe_mail_last_sent_at": null,
           "kunden_update_requested": false,
@@ -2624,7 +2624,7 @@
           "kunden_update_failed_at": null,
           "closed": false,
           "closed_at": null,
-          "last_error": "Python updates failed",
+          "last_error": null,
           "customer_approvals": {},
           "services": {},
           "python_updates": {
@@ -2701,12 +2701,12 @@
           "lokal_update_requested_at": "2026-04-15T15:41:00",
           "lokal_update_done": false,
           "lokal_update_done_at": null,
-          "lokal_update_failed": true,
-          "lokal_update_failed_at": "2026-04-15T14:09:27",
+          "lokal_update_failed": false,
+          "lokal_update_failed_at": null,
           "lokal_result_mail_sent": false,
           "lokal_result_mail_sent_at": null,
           "lokal_report_path": "/project/update_tests/reports/local_update_report_20260415_140926.json",
-          "lokal_report_status": "failed",
+          "lokal_report_status": null,
           "freigabe_mail_sent": false,
           "freigabe_mail_last_sent_at": null,
           "kunden_update_requested": false,
@@ -2717,7 +2717,7 @@
           "kunden_update_failed_at": null,
           "closed": false,
           "closed_at": null,
-          "last_error": "Python updates failed",
+          "last_error": null,
           "customer_approvals": {},
           "services": {},
           "python_updates": {
@@ -2830,12 +2830,12 @@
           "lokal_update_requested_at": "2026-04-15T15:41:00",
           "lokal_update_done": false,
           "lokal_update_done_at": null,
-          "lokal_update_failed": true,
-          "lokal_update_failed_at": "2026-04-15T14:09:18",
+          "lokal_update_failed": false,
+          "lokal_update_failed_at": null,
           "lokal_result_mail_sent": false,
           "lokal_result_mail_sent_at": null,
           "lokal_report_path": "/project/update_tests/reports/local_update_report_20260415_140918.json",
-          "lokal_report_status": "failed",
+          "lokal_report_status": null,
           "freigabe_mail_sent": false,
           "freigabe_mail_last_sent_at": null,
           "kunden_update_requested": false,
@@ -2846,7 +2846,7 @@
           "kunden_update_failed_at": null,
           "closed": false,
           "closed_at": null,
-          "last_error": "Python updates failed",
+          "last_error": null,
           "customer_approvals": {},
           "services": {},
           "python_updates": {
@@ -2860,7 +2860,8 @@
           "security_count": 0,
           "update_count": 1
         }
-      }
+      },
+      "batch_closed_at": null
     }
   }
 }
