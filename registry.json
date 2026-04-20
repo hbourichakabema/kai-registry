@@ -3128,6 +3128,241 @@
           "update_count": 1
         }
       }
+    },
+    "2026-04-20T14-43-03": {
+      "scanned_at": "2026-04-20T14:43:03",
+      "batch_closed": false,
+      "projects": {
+        "02_chatbot_rag_multiusers": {
+          "update_available": true,
+          "agent_enabled": true,
+          "runtime_location": "local",
+          "lokal_update_requested": false,
+          "lokal_update_requested_at": null,
+          "lokal_update_done": false,
+          "lokal_update_done_at": null,
+          "lokal_update_failed": false,
+          "lokal_update_failed_at": null,
+          "lokal_result_mail_sent": false,
+          "lokal_result_mail_sent_at": null,
+          "lokal_report_path": null,
+          "lokal_report_status": null,
+          "freigabe_mail_sent": false,
+          "freigabe_mail_last_sent_at": null,
+          "kunden_update_requested": false,
+          "kunden_update_requested_at": null,
+          "kunden_update_done": false,
+          "kunden_update_done_at": null,
+          "kunden_update_failed": false,
+          "kunden_update_failed_at": null,
+          "closed": false,
+          "closed_at": null,
+          "last_error": null,
+          "customer_approvals": {},
+          "services": {},
+          "python_updates": {
+            "pyyaml": {
+              "current": "6.0.2",
+              "target": "6.0.3",
+              "is_security": false
+            }
+          },
+          "severity": "LOW",
+          "security_count": 0,
+          "update_count": 1
+        },
+        "06_RAG_Pipeline": {
+          "update_available": true,
+          "agent_enabled": true,
+          "runtime_location": "local",
+          "lokal_update_requested": false,
+          "lokal_update_requested_at": null,
+          "lokal_update_done": false,
+          "lokal_update_done_at": null,
+          "lokal_update_failed": false,
+          "lokal_update_failed_at": null,
+          "lokal_result_mail_sent": false,
+          "lokal_result_mail_sent_at": null,
+          "lokal_report_path": null,
+          "lokal_report_status": null,
+          "freigabe_mail_sent": false,
+          "freigabe_mail_last_sent_at": null,
+          "kunden_update_requested": false,
+          "kunden_update_requested_at": null,
+          "kunden_update_done": false,
+          "kunden_update_done_at": null,
+          "kunden_update_failed": false,
+          "kunden_update_failed_at": null,
+          "closed": false,
+          "closed_at": null,
+          "last_error": null,
+          "customer_approvals": {
+            "kai_fB-dCJ4VA9Yy4kmRAVQPPA": {
+              "email": "Markus.Kretschmer@kunzmann.de",
+              "email_sent": false,
+              "email_sent_at": null,
+              "approved": false,
+              "approved_at": null,
+              "update_done": false,
+              "update_done_at": null,
+              "update_failed": false,
+              "update_failed_at": null
+            }
+          },
+          "services": {
+            "alpine": {
+              "image": "alpine",
+              "current_tag": "3.23.3",
+              "target_tag": "3.23.4"
+            },
+            "rag-pipeline-embedding-server": {
+              "image": "ghcr.io/hbourichakabema/rag-pipeline-embedding-server",
+              "current_tag": "latest",
+              "target_tag": "?"
+            }
+          },
+          "python_updates": {
+            "pyyaml": {
+              "current": "6.0.2",
+              "target": "6.0.3",
+              "is_security": false
+            },
+            "pypdf": {
+              "current": "6.10.0",
+              "target": "6.10.2",
+              "is_security": true
+            }
+          },
+          "severity": "HIGH",
+          "security_count": 1,
+          "update_count": 4
+        },
+        "08_ChatGPT_Ersatz": {
+          "update_available": true,
+          "agent_enabled": true,
+          "runtime_location": "local",
+          "lokal_update_requested": false,
+          "lokal_update_requested_at": null,
+          "lokal_update_done": false,
+          "lokal_update_done_at": null,
+          "lokal_update_failed": false,
+          "lokal_update_failed_at": null,
+          "lokal_result_mail_sent": false,
+          "lokal_result_mail_sent_at": null,
+          "lokal_report_path": null,
+          "lokal_report_status": null,
+          "freigabe_mail_sent": false,
+          "freigabe_mail_last_sent_at": null,
+          "kunden_update_requested": false,
+          "kunden_update_requested_at": null,
+          "kunden_update_done": false,
+          "kunden_update_done_at": null,
+          "kunden_update_failed": false,
+          "kunden_update_failed_at": null,
+          "closed": false,
+          "closed_at": null,
+          "last_error": null,
+          "customer_approvals": {},
+          "services": {
+            "searxng": {
+              "image": "searxng/searxng",
+              "current_tag": "2026.4.13-ee66b070a",
+              "target_tag": "2026.4.17-e8299a4c3"
+            }
+          },
+          "python_updates": {},
+          "severity": "LOW",
+          "security_count": 0,
+          "update_count": 1
+        },
+        "10_Release_Updates": {
+          "update_available": true,
+          "agent_enabled": true,
+          "runtime_location": "unknown",
+          "lokal_update_requested": false,
+          "lokal_update_requested_at": null,
+          "lokal_update_done": false,
+          "lokal_update_done_at": null,
+          "lokal_update_failed": false,
+          "lokal_update_failed_at": null,
+          "lokal_result_mail_sent": false,
+          "lokal_result_mail_sent_at": null,
+          "lokal_report_path": null,
+          "lokal_report_status": null,
+          "freigabe_mail_sent": false,
+          "freigabe_mail_last_sent_at": null,
+          "kunden_update_requested": false,
+          "kunden_update_requested_at": null,
+          "kunden_update_done": false,
+          "kunden_update_done_at": null,
+          "kunden_update_failed": false,
+          "kunden_update_failed_at": null,
+          "closed": false,
+          "closed_at": null,
+          "last_error": null,
+          "customer_approvals": {},
+          "services": {
+            "release-watch-watchdog": {
+              "image": "release-watch-watchdog",
+              "current_tag": "latest",
+              "target_tag": "?"
+            }
+          },
+          "python_updates": {},
+          "severity": "LOW",
+          "security_count": 0,
+          "update_count": 2
+        },
+        "11_RAG_Mit_OpenWebUI": {
+          "update_available": true,
+          "agent_enabled": true,
+          "runtime_location": "local",
+          "lokal_update_requested": false,
+          "lokal_update_requested_at": null,
+          "lokal_update_done": false,
+          "lokal_update_done_at": null,
+          "lokal_update_failed": false,
+          "lokal_update_failed_at": null,
+          "lokal_result_mail_sent": false,
+          "lokal_result_mail_sent_at": null,
+          "lokal_report_path": null,
+          "lokal_report_status": null,
+          "freigabe_mail_sent": false,
+          "freigabe_mail_last_sent_at": null,
+          "kunden_update_requested": false,
+          "kunden_update_requested_at": null,
+          "kunden_update_done": false,
+          "kunden_update_done_at": null,
+          "kunden_update_failed": false,
+          "kunden_update_failed_at": null,
+          "closed": false,
+          "closed_at": null,
+          "last_error": null,
+          "customer_approvals": {},
+          "services": {
+            "rag-mit-openwebui-embedding-server": {
+              "image": "ghcr.io/hbourichakabema/rag-mit-openwebui-embedding-server",
+              "current_tag": "latest",
+              "target_tag": "?"
+            }
+          },
+          "python_updates": {
+            "pyyaml": {
+              "current": "6.0.2",
+              "target": "6.0.3",
+              "is_security": false
+            },
+            "pypdf": {
+              "current": "6.10.1",
+              "target": "6.10.2",
+              "is_security": true
+            }
+          },
+          "severity": "HIGH",
+          "security_count": 1,
+          "update_count": 3
+        }
+      }
     }
   }
 }
